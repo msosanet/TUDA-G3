@@ -4,6 +4,6 @@ Integrantes. (Agregar datos y usuario de github)
 
 Belen Lopez Osornio- belen113
 Fatima Lucia Rey Contarelli - Fati-Rey
-Jeremias
+Jeremias Duran - jere110
 Matias Alejandro Sosa - msosanet
 
