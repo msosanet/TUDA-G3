@@ -1,80 +1,87 @@
 :root {
-  --color-fondo: #FFFFFF;      /* Blanco: Fondo total */
-  --color-primario: #722F37;   /* Vino: Botones y Menús */
-  --color-acento: #D4AF37;     /* Oro: Detalles y Hover */
-  --color-texto: #2C2C2C;      /* Carbón: Títulos y Cuerpo */
-  --color-suave: #F9F9F9;      /* Gris humo: Para tarjetas de producto */
+  --color-fondo: #FFFFFF; /* Blanco: Fondo total */
+  --color-primario: #722F37; /* Vino: Botones y Menus */
+  --color-acento: #D4AF37; /* Oro: Detalles y Hover */
+  --color-texto: #2C2C2C; /* Carbon: Titulos y Cuerpo */
+  --color-suave: #F9F9F9; /* Gris humo: Para tarjetas de producto */
 }
 
-       body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            color: var(--color-texto);
-            background-color: var(--color-fondo);
-        }
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+}
 
-        /* Navegación */
-        nav {
-            background-color: var(--color-primario);
-            color: white;
-            padding: 1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+/* Navegacion */
+nav {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-        nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 500; }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
 
-        /* Hero Section */
-        .hero {
-            height: 400px;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('ruta-a-tu-imagen-vino.jpg') center/cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
+/* Hero Section */
+.hero {
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('ruta-a-tu-imagen-vino.jpg') center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
 
-        .btn-principal {
-            background-color: var(--color-primario);
-            color: white;
-            padding: 12px 30px;
-            border: 2px solid var(--color-acento);
-            text-decoration: none;
-            margin-top: 20px;
-            transition: 0.3s;
-        }
+.btn-principal {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 12px 30px;
+  border: 2px solid var(--color-acento);
+  text-decoration: none;
+  margin-top: 20px;
+  transition: 0.3s;
+}
 
-        /* Galería de Productos */
-        .productos {
-            padding: 50px 5%;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
+/* Galeria de Productos */
+.productos {
+  padding: 50px 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
 
-        .tarjeta {
-            background-color: var(--color-suave);
-            padding: 20px;
-            text-align: center;
-            border-bottom: 3px solid transparent;
-            transition: 0.3s;
-        }
+.tarjeta {
+  background-color: var(--color-suave);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s;
+}
 
-        .tarjeta:hover { border-bottom: 3px solid var(--color-acento); }
+.tarjeta:hover {
+  border-bottom: 3px solid var(--color-acento);
+}
 
-        .precio {
-            color: var(--color-primario);
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
+.precio {
+  color: var(--color-primario);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
 
-        footer {
-            background-color: var(--color-texto);
-            color: var(--color-suave);
-            text-align: center;
-            padding: 2rem;
-            margin-top: 50px;
-        }
+footer {
+  background-color: var(--color-texto);
+  color: var(--color-suave);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 50px;
+}
