@@ -1,0 +1,7 @@
+:root {
+  --color-fondo: #FFFFFF;      /* Blanco: Fondo total */
+  --color-primario: #722F37;   /* Vino: Botones y Menús */
+  --color-acento: #D4AF37;     /* Oro: Detalles y Hover */
+  --color-texto: #2C2C2C;      /* Carbón: Títulos y Cuerpo */
+  --color-suave: #F9F9F9;      /* Gris humo: Para tarjetas de producto */
+}
