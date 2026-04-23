@@ -1,22 +1,51 @@
 .container {
   display: grid;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
-    "header header"
+    "cabecera cabecera"
     "menu content"
     "footer footer";
   grid-template-columns: 1fr 3fr;
-  gap: 3px;
-  background-color: dodgerblue;
+  height: auto;
+  display: flex;
+  background-color: #722F37;
   padding: 5px;
+  min-height: 10vh;
 }
-.container div {
-  background-color: white;
+
+/* flexbox en grid,creo xd*/
+.cabecera{
+  grid-area: cabecera;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
   padding: 10px;
 }
-.container div.header {
-  grid-area: header;
-  text-align: center;
+
+/* Navbar */
+nav {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.container div {
+  background-color: #722F37;
+  padding: 10px;
+}
+
 .container div.menu {
   grid-area: menu;
 }
