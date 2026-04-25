@@ -1,3 +1,29 @@
-h1{
-    color: #FF0000; /*pruebaba*/
+:root{/*galeria de colores*/
+--color-fondo: #FFFFFF; /* Blanco: Fondo total */
+  --color-primario: #722F37; /* Vino: Botones y Menus */
+  --color-acento: #D4AF37; /* Oro: Detalles y Hover */
+  --color-texto: #2C2C2C; /* Carbon: Titulos y Cuerpo */
+  --color-suave: #F9F9F9; /* Gris humo: Para tarjetas de producto*/
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    background-color: var(--color-primario);/*cambio color de fondo*/
+    padding: 1rem 6%;
+    display: flex; /**/
+    align-items: center;/*alineo todos los elementos del contenedor al centro*/
+    justify-content: space-between;
+    color: #FFFFFF; /*cambio el color de la letra a blanco*/
+}   
+
+.enlaces a{
+    text-align: left;
+    text-decoration: none; /*quito el subrayado de los links*/
+    color: #FFFFFF; /*cambio el color de la letra a blanco*/
+    margin-left: 20px;
+    font-weight: 500;
+}
+header{
+    text-align: center; /*hago que el texto esté en medio*/
 }
