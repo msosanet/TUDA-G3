@@ -1,4 +1,4 @@
-Este repo es el repo del Ggrupo 3 para la catedra WEB1.
+Este repo es el repo del Grupo 3 para la catedra WEB1.
 
 Integrantes. (Agregar datos y usuario de github)
 

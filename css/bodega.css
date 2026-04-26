@@ -15,7 +15,7 @@ nav{
     align-items: center;/*alineo todos los elementos del contenedor al centro*/
     justify-content: space-between;
     color: #FFFFFF; /*cambio el color de la letra a blanco*/
-}   
+}
 
 .enlaces a{
     text-align: left;
@@ -25,5 +25,5 @@ nav{
     font-weight: 500;
 }
 header{
-    text-align: center; /*hago que el texto esté en medio*/
+    text-align: center; /*hago que el texto este en medio*/
 }
