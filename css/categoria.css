@@ -75,15 +75,19 @@ nav a {
  }
 .contenedor div.tarjeta {
   background-color: var(--color-suave);
-  flex: 1 1 250px;
+  flex: 1 1 calc(33% - 40px);
   border: 1px solid #ddd;
   padding: 20px;
   text-align: center;
-  border-bottom: 3px solid transparent;
   transition: 0.3s;
 }
 
-.contenedor div.footer {
+/*footer*/
+footer {
   grid-area: footer;
-  text-align: center;  
+  background-color: var(--color-texto);
+  color: var(--color-suave);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 50px;
 }
