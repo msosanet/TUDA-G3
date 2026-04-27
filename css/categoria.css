@@ -1,26 +1,20 @@
-.container {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas:
-    "cabecera cabecera"
-    "menu content"
-    "footer footer";
-  grid-template-columns: 1fr 3fr;
-  height: auto;
-  display: flex;
-  background-color: #722F37;
-  padding: 5px;
-  min-height: 10vh;
+:root {
+  --color-fondo: #FFFFFF; /* Blanco: Fondo total */
+  --color-primario: #722F37; /* Vino: Botones y Menus */
+  --color-acento: #D4AF37; /* Oro: Detalles y Hover */
+  --color-texto: #2C2C2C; /* Carbon: Titulos y Cuerpo */
+  --color-suave: #F9F9F9; /* Gris humo: Para tarjetas de producto */
 }
 
 body {
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   margin: 0;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
 }
 
 /* Navbar */
-nav {
-  background-color: var(--color-primario);
+nav {  background-color: var(--color-primario);
   color: white;
   padding: 1rem 5%;
   display: flex;
@@ -35,6 +29,7 @@ nav a {
   font-weight: 500;
 }
 
+/*Imagen y titulo de categoria*/
 .hero {
   height: 400px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/vinos/portada\ categoria.png') center/cover;
@@ -46,13 +41,49 @@ nav a {
   text-align: center;
 }
 
-.container div.menu {
+.contenedor {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu contenido"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  gap: 3px;
+  padding: 5px;
+}
+
+/* Menu categoria */
+.contenedor div.menu {
   grid-area: menu;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
 }
-.container div.content {
-  grid-area: content;
+
+/*Contenido*/
+.contenedor div.contenido {
+  grid-area: contenido;
 }
-.container div.footer {
+
+ /*Elementos y area tarjetas*/
+ .contenedor div.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+ }
+.contenedor div.tarjeta {
+  background-color: var(--color-suave);
+  flex: 1 1 250px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s;
+}
+
+.contenedor div.footer {
   grid-area: footer;
   text-align: center;  
 }
