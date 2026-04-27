@@ -13,15 +13,9 @@
   min-height: 10vh;
 }
 
-/* flexbox en grid,creo xd*/
-.cabecera{
-  grid-area: cabecera;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 10px;
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
 }
 
 /* Navbar */
