@@ -24,7 +24,7 @@ nav{
     align-items: center;/*centra verticalmente todos los elementos del contenedor*/
     justify-content: space-between; /*hago que el primer elemento se posicione en la izquierda y el ultimo elemento a la derecha*/
     color: #FFFFFF; /*cambio el color de la letra a blanco*/
-}   
+}
 
 .enlaces a{
     text-align: left; /*ubica los textos a la izquierda*/
@@ -34,6 +34,7 @@ nav{
     font-weight: 500; /*cambio el grosor de la letra*/
 
 }
+<<<<<<< HEAD
 .texto{
     color: #FFFFFF; /*cambio el color de la letra a blanco*/
     font-size: 40px; /*cambio el tamaño de letra*/
@@ -42,4 +43,8 @@ nav{
 main{
     display: grid; /*posisiono los elementos dentro de una grilla*/
     grid-template-columns: 1fr 1fr;
+=======
+header{
+    text-align: center; /*hago que el texto este en medio*/
+>>>>>>> bc61ba38e16b62599b357f09de42f47697f15e80
 }
