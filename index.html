@@ -4,48 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/principal.css">
-    <title>Vinoteca Elite | Excelencia en cada copa</title>
+    <title>Winebox | Excelencia en cada copa</title>
 </head>
 <body>
     <nav>
-        <div class="logo"><strong>VINOTECA</strong> ELITE</div>
+        <div class="logo">
+            <img src="img/logo-winebox.png" alt="Logo de Winebox">
+            <strong>Winebox</strong>
+        </div>
         <div>
             <a href="index.html">Inicio</a>
             <a href="categoria.html">Vinos</a>
             <a href="bodega.html">Bodegas</a>
-            <a href="#">Contacto</a>
+            <a href="Contacto.html">Contacto</a>
+            <a href="#newsletter">Newsletter</a>
         </div>
     </nav>
 
     <header class="hero">
         <h1>DESCUBRE LA EXCELENCIA EN CADA COPA</h1>
-        <p>Seleccion exclusiva de etiquetas premium</p>
+        <p>Selección exclusiva de etiquetas alta gama</p>
         <a href="categoria.html" class="btn-principal">EXPLORAR CATALOGO</a>
     </header>
 
     <main>
-        <h2 style="text-align: center; margin-top: 50px;">DESTACADOS DE LA SEMANA</h2>
+        <h2 class="titulo-seccion">DESTACADOS DE LA SEMANA</h2>
         <section class="productos">
             <div class="tarjeta">
-                <img src="img/vinos/vinardo-rosato.png" alt="Vino Vinardo Rosato" style="width:100px;">
+                <img src="img/vinos/vinardo-rosato.png" alt="Vino Vinardo Rosato">
                 <h3>Reserva Especial "Vinardo Rosato"</h3>
-                <p>Valle de Uco, Mendoza</p>
-                <p class="precio">$75.00</p>
-                <a href="#" style="color: var(--color-primario);">Ver detalle</a>
+                <p>Valle de Uco, Mendoza.<br> El lugar donde comienza la traición. <br>  Los hermanos Rosato tomaron el viñedo de Pentangeli y crearon una obra maestra.</p>
+                <p class="precio">$73.000,00</p>
+                <a href="#" class="link-detalle">Habla con el somelier</a>
             </div>
 
             <div class="tarjeta">
-                <img src="img/vinos/michaelo-corleone.png" alt="Vino Michaelo Corleone" style="width:100px;">
+                <img src="img/vinos/michaelo-corleone.png" alt="Vino Michaelo Corleone">
                 <h3>Reserva Especial "Michaelo Corleone"</h3>
-                <p>Valle de Uco, Mendoza</p>
-                <p class="precio">$75.00</p>
-                <a href="#" style="color: var(--color-primario);">Ver detalle</a>
+                <p>Corleone, Italia.<br> El poder hace un vino para recordar que Apollonia habita solo en el tiempo.</p>
+                <p class="precio">$89.999,99</p>
+                <a href="#" class="link-detalle">Habla con el somelier</a>
             </div>
+        </section>
+
+        <section class="newsletter" id="newsletter">
+            <div>
+                <p class="etiqueta">Newsletter</p>
+                <h2>Unite al club del vino más austral y exclusivo.</h2>
+                <p>Conoce nuestros nuevos ingresos, las mejores promociones y recomendaciones de temporada. </p>
+            </div>
+            <form action="#newsletter" method="post">
+                <label for="nombre-newsletter">Nombre</label>
+                <input type="text" id="nombre-newsletter" name="nombre-newsletter" placeholder="Tu nombre" required>
+
+                <label for="email-newsletter">Correo electronico</label>
+                <input type="email" id="email-newsletter" name="email-newsletter" placeholder="tu@email.com" required>
+
+                <label for="preferencia-newsletter">Preferencia</label>
+                <select id="preferencia-newsletter" name="preferencia-newsletter">
+                    <option value="tintos">Vinos tintos</option>
+                    <option value="blancos">Vinos blancos</option>
+                    <option value="rosados">Vinos rosados</option>
+                    <option value="espumantes">Espumantes</option>
+                </select>
+
+                <label class="opcion-newsletter">
+                    <input type="checkbox" name="ofertas" checked>
+                    Quiero recibir ofertas especiales
+                </label>
+
+                <button type="submit">Suscribirme</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Wine Box - Todos los derechos reservados.</p>
+        <p>&copy; 2026 Winebox - Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
