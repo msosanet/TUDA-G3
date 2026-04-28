@@ -14,41 +14,39 @@
             <strong>Winebox</strong>
         </div>
         <div>
-            <a href="index.html">Inicio</a>
-            <a href="categoria.html">Vinos</a>
-            <a href="bodega.html">Bodegas</a>
-            <a href="Contacto.html">Contacto</a>
-            <a href="#newsletter">Newsletter</a>
+            <a href="index.html" title="enlace a inicio">Inicio</a>
+            <a href="categoria.html" title="enlace a vinos">Vinos</a>
+            <a href="bodega.html" title="enlace a bodegas">Bodegas</a>
+            <a href="Contacto.html" title="enlace a contacto">Contacto</a>
         </div>
     </nav>
-    
-       
-    
+
        <main>
+        <div class="imagen-vino">
+                <h1>CONTACTO</h1>
+                    <p>Los mejores vinos seleccionados para ti</p>
+        </div>
         <section id="contacto">
             <div class="contact-card">
                 <header class="header">
-                    <h1>Contacto</h1>
-                    <p>Los mejores vinos seleccionados para ti</p>
+                
+                
                 </header>
                 <form class="contact-form" method="POST" action="#">
                     <div class="form-group">
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required>
-                    </div>
 
-                    <div class="form-group">
                         <label for="email">Correo electrónico:</label>
                         <input type="email" id="email" name="email" required>
+                    
+                        <label for="mensaje">Mensaje:</label>     <!--borre el required-->
+                        <textarea id="mensaje" name="mensaje" rows="2"></textarea>
                     </div>
 
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-                    </div>
-
-                    <div class="form-group form-radios">
-                        <span>Calificar Atención:</span>
+                   
+                    <span>Calificar Atención:</span>
+                    <div class="form-radios">   
                         <label for="calificar_1"><input type="radio" name="calificar" id="calificar_1" value="1" required>Pésima</label>
                         <label for="calificar_2"><input type="radio" name="calificar" id="calificar_2" value="2">Aceptable</label>
                         <label for="calificar_3"><input type="radio" name="calificar" id="calificar_3" value="3">Buena</label>
@@ -61,7 +59,7 @@
         </section>
     </main>
 
-    <footer style="background-color: rgb(114, 47, 55); color: white; text-align: center; padding: 20px; margin-bottom:0;">
+    <footer>
         <p>&copy; 2026 Winebox. Todos los derechos reservados.</p>
     </footer>
 </body>
