@@ -1,16 +1,8 @@
-:root {
-  --color-fondo: #FFFFFF; /* Blanco: Fondo total */
-  --color-primario: #722F37; /* Vino: Botones y Menus */
-  --color-acento: #D4AF37; /* Oro: Detalles y Hover */
-  --color-texto: #2C2C2C; /* Carbon: Titulos y Cuerpo */
-  --color-suave: #F9F9F9; /* Gris humo: Para tarjetas de producto */
-}
-
 body {
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   margin: 0;
-  color: var(--color-texto);
-  background-color: var(--color-fondo);
+  color: #2C2C2C;
+  background-color: #FFFFFF;
 }
 
 * {
@@ -19,7 +11,7 @@ body {
 
 /* Navegacion */
 nav {
-  background-color: var(--color-primario);
+  background-color: #722F37;
   color: white;
   padding: 1rem 5%;
   display: flex;
@@ -64,10 +56,10 @@ nav a {
 }
 
 .btn-principal {
-  background-color: var(--color-primario);
+  background-color: #722F37;
   color: white;
   padding: 12px 30px;
-  border: 2px solid var(--color-acento);
+  border: 2px solid #D4AF37;
   text-decoration: none;
   margin-top: 20px;
   transition: 0.3s;
@@ -76,6 +68,42 @@ nav a {
 .titulo-seccion {
   text-align: center;
   margin: 50px 5% 0;
+}
+
+.presentacion,
+.newsletter {
+  width: min(1100px, 90%);
+  margin: 60px auto 0;
+}
+
+.presentacion {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr) minmax(280px, 1.1fr);
+  gap: 36px;
+  align-items: center;
+  padding: 36px 0;
+  border-bottom: 1px solid rgba(44, 44, 44, 0.12);
+}
+
+.presentacion h2,
+.newsletter h2 {
+  margin: 0;
+  color: #722F37;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.presentacion p,
+.newsletter p {
+  line-height: 1.7;
+}
+
+.etiqueta {
+  margin: 0 0 10px;
+  color: #D4AF37;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
 }
 
 /* Galeria de Productos */
@@ -89,7 +117,7 @@ nav a {
 }
 
 .tarjeta {
-  background-color: var(--color-suave);
+  background-color: #F9F9F9;
   padding: 18px;
   text-align: center;
   border-radius: 8px;
@@ -122,27 +150,79 @@ nav a {
 }
 
 .tarjeta:hover {
-  border-bottom: 3px solid var(--color-acento);
+  border-bottom: 3px solid #D4AF37;
   transform: translateY(-4px);
   box-shadow: 0 16px 38px rgba(44, 44, 44, 0.14);
 }
 
 .precio {
-  color: var(--color-primario);
+  color: #722F37;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .link-detalle {
-  color: var(--color-primario);
+  color: #722F37;
   font-weight: 600;
   display: inline-block;
   margin-top: 8px;
 }
 
+.newsletter {
+  background-color: #F9F9F9;
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(280px, 0.9fr);
+  gap: 32px;
+  align-items: center;
+  padding: 34px;
+  border-radius: 8px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter label {
+  font-weight: 700;
+}
+
+.newsletter input,
+.newsletter select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid rgba(44, 44, 44, 0.25);
+  border-radius: 4px;
+  font: inherit;
+  background-color: white;
+}
+
+.opcion-newsletter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.4;
+}
+
+.opcion-newsletter input {
+  width: auto;
+}
+
+.newsletter button {
+  background-color: #722F37;
+  color: white;
+  padding: 13px 18px;
+  border: 0;
+  border-radius: 4px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 footer {
-  background-color: var(--color-texto);
-  color: var(--color-suave);
+  background-color: #2C2C2C;
+  color: #F9F9F9;
   text-align: center;
   padding: 2rem;
   margin-top: 50px;
@@ -196,6 +276,27 @@ footer {
     line-height: 1.25;
   }
 
+  .presentacion,
+  .newsletter {
+    width: auto;
+    margin: 36px 16px 0;
+  }
+
+  .presentacion,
+  .newsletter {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .presentacion {
+    padding: 28px 0;
+  }
+
+  .presentacion h2,
+  .newsletter h2 {
+    font-size: 1.45rem;
+  }
+
   .productos {
     grid-template-columns: 1fr;
     padding: 32px 16px;
@@ -208,6 +309,10 @@ footer {
 
   .tarjeta img {
     margin-bottom: 16px;
+  }
+
+  .newsletter {
+    padding: 24px 18px;
   }
 
   footer {
@@ -235,6 +340,11 @@ footer {
   }
 
   .titulo-seccion {
+    font-size: 1.25rem;
+  }
+
+  .presentacion h2,
+  .newsletter h2 {
     font-size: 1.25rem;
   }
 
