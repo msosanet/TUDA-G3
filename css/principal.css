@@ -13,6 +13,10 @@ body {
   background-color: var(--color-fondo);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* Navegacion */
 nav {
   background-color: var(--color-primario);
@@ -30,6 +34,10 @@ nav a {
   font-weight: 500;
 }
 
+.logo {
+  white-space: nowrap;
+}
+
 /* Hero Section */
 .hero {
   height: 400px;
@@ -40,6 +48,19 @@ nav a {
   align-items: center;
   color: white;
   text-align: center;
+  padding: 0 5%;
+}
+
+.hero h1 {
+  max-width: 900px;
+  margin: 0;
+  font-size: 2.6rem;
+  line-height: 1.15;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 .btn-principal {
@@ -50,6 +71,11 @@ nav a {
   text-decoration: none;
   margin-top: 20px;
   transition: 0.3s;
+}
+
+.titulo-seccion {
+  text-align: center;
+  margin: 50px 5% 0;
 }
 
 /* Galeria de Productos */
@@ -68,6 +94,20 @@ nav a {
   transition: 0.3s;
 }
 
+.tarjeta img {
+  width: 100px;
+  max-width: 60%;
+  height: auto;
+}
+
+.tarjeta h3 {
+  line-height: 1.25;
+}
+
+.tarjeta p {
+  line-height: 1.5;
+}
+
 .tarjeta:hover {
   border-bottom: 3px solid var(--color-acento);
 }
@@ -78,10 +118,106 @@ nav a {
   font-size: 1.2rem;
 }
 
+.link-detalle {
+  color: var(--color-primario);
+  font-weight: 600;
+}
+
 footer {
   background-color: var(--color-texto);
   color: var(--color-suave);
   text-align: center;
   padding: 2rem;
   margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 14px;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  nav div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 16px;
+  }
+
+  nav a {
+    margin-left: 0;
+    padding: 6px 4px;
+    font-size: 0.98rem;
+  }
+
+  .hero {
+    min-height: 430px;
+    height: auto;
+    padding: 56px 18px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn-principal {
+    width: 100%;
+    max-width: 280px;
+    padding: 13px 18px;
+    text-align: center;
+  }
+
+  .titulo-seccion {
+    margin-top: 36px;
+    font-size: 1.45rem;
+    line-height: 1.25;
+  }
+
+  .productos {
+    grid-template-columns: 1fr;
+    padding: 32px 16px;
+    gap: 22px;
+  }
+
+  .tarjeta {
+    padding: 24px 18px;
+  }
+
+  footer {
+    margin-top: 28px;
+    padding: 1.5rem 1rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo {
+    font-size: 1rem;
+  }
+
+  nav div:last-child {
+    gap: 6px 12px;
+  }
+
+  nav a {
+    font-size: 0.94rem;
+  }
+
+  .hero h1 {
+    font-size: 1.65rem;
+  }
+
+  .titulo-seccion {
+    font-size: 1.25rem;
+  }
+
+  .tarjeta h3 {
+    font-size: 1.1rem;
+  }
 }
