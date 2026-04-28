@@ -1,73 +1,70 @@
-      * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background-color: rgb(255, 255, 255);
-            font-family: Arial, sans-serif;
-            color: #333;
-            display: flex;
-            min-height: 100vh;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        header {
-            background-color: rgb(114, 47, 55);     
-            color: white;
-            padding: 20px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header h2 {
-            font-size: 2.5em;
-            margin: 0;
-            flex: 1;
-        }
-                /* Navegacion */
-        nav {
-        background-color: #722F37;
-        color: white;
-        padding: 0.45rem 5%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        box-shadow: 0 0.35rem 1rem rgba(44, 44, 44, 0.16);
-        }
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  color: #2C2C2C;
+  background-color: #FFFFFF;
+}
 
-        nav a {
-        color: white;
-        text-decoration: none;
-        margin-left: 1.25rem;
-        font-weight: 500;
-        }
+* {
+  box-sizing: border-box;
+}
 
-        .logo {
-        display: flex;
-        align-items: center;
-        gap: 0.65rem;
-        white-space: nowrap;
-        }
+/* Navegacion */
+nav {
+  background-color: #722F37;
+  color: white;
+  padding: 0.45rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 0.35rem 1rem rgba(44, 44, 44, 0.16);
+}
 
-        .logo img {
-        width: 4.6rem;
-        height: 4.6rem;
-        object-fit: contain;
-        border-radius: 50%;
-        }
-        
-        main {
-            padding: 40px 20px;
-            flex: 1;
-        }
-        #contacto {
-          display:flex;
-          justify-content:center;
-          align-items:center; 
-          margin: 0;
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.25rem;
+  font-weight: 500;
+}
 
-        }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  white-space: nowrap;
+}
+
+.logo img {
+  width: 4.6rem;
+  height: 4.6rem;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 25rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/vinos/portada categoria.png') center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 5%;
+}
+
+.hero h1 {
+  max-width: 56.25rem;
+  margin: 0;
+  font-size: 2.6rem;
+  line-height: 1.15;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}

@@ -12,14 +12,6 @@ a {
   transition: color 0.3s;
 }
 
-a:hover{
-  color:inherit;
-  text-decoration: none;
-}
-
-h2{
-
-}
 
 body {
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -31,10 +23,14 @@ body {
 /* Navbar */
 nav {  background-color: var(--color-primario);
   color: white;
-  padding: 1rem 5%;
+  padding: 0.45rem 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 0.35rem 1rem rgba(44, 44, 44, 0.16);
 }
 
 nav a {
@@ -42,6 +38,21 @@ nav a {
   text-decoration: none;
   margin-left: 20px;
   font-weight: 500;
+}
+
+/*icono*/
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  white-space: nowrap;
+}
+
+.logo img {
+  width: 4.6rem;
+  height: 4.6rem;
+  object-fit: contain;
+  border-radius: 50%;
 }
 
 /*Imagen y titulo de categoria*/
@@ -71,47 +82,92 @@ nav a {
   display: grid;
   grid-template-areas:
     "header header"
-    "menu contenido"
+    "menu menu"
+    "contenido contenido"
     "footer footer";
-  grid-template-columns: 175px 1fr;
-  gap: 3px;
-  margin-top:3px;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  margin-top:5px;
   padding: 3px;
 }
 
 /* Menu categoria */
-.contenedor div.menu {
+.contenedor section.menu {
   grid-area: menu;
   background-color: rgb(255, 255, 255);
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-left: 10px;
-  border-right: 5px solid var(--color-primario);
+  flex-direction: row; /*horizontal*/
+  gap: 20px; /*espacio entre elementos*/  
+  border-bottom: 2px solid var(--color-primario);
+  justify-content: space-around;
+  position: sticky;
+  top: 13px;
+  background-color: white;
+  z-index: 100;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--color-oscuro);
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: all 0.3s;
+  
+}
+
+.menu a:hover {
+  background-color: var(--color-primario);
+  color: white;
 }
 
 /*Contenido*/
-.contenedor div.contenido {
+.contenedor section.contenido {
   grid-area: contenido;
   margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.contenedor section.contenido a:hover {
+color: var(--color-primario);
 }
 
  /*Elementos y area tarjetas*/
- .contenedor div.productos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+ .contenedor section.productos {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
   justify-content: center;
  }
 .contenedor div.tarjeta {
   background-color: var(--color-suave);
-  flex: 1 1 calc(33% - 40px);
   border: 1px solid #ddd;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   transition: 0.3s;
-  margin: 10px;
+  box-sizing: border-box;
 }
+
+.destacado {
+  color:var(--color-primario);
+  font-weight: bold;
+}
+
+.tarjeta:hover {
+  border-bottom: 0.1875rem solid #D4AF37;
+  transform: translateY(-0.25rem);
+  box-shadow: 0 1rem 2.375rem rgba(44, 44, 44, 0.14);
+}
+
+.tarjeta h2:hover {
+  color: var(--color-primario);
+}
+.tarjeta h3:hover {
+  color: var(--color-primario);
+}
+
 
 /*footer*/
 footer {
