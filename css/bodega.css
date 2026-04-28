@@ -6,16 +6,18 @@
   --color-suave: #F9F9F9; /* Gris humo: Para tarjetas de producto*/
 }
 .fondo{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bodega/Bodega-fondo.jpg);
-    height: 400px; 
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bodega/fondo-bodega.avif);
+    height: 400px; /*establezco un alto de 400px*/
     background-repeat: no-repeat; /*quito la repeticion de la imagen que cubre todo el elemento*/
     background-position: center; /*posiciono la imagen al centro*/
     background-size: cover; /*hace que la imagen cubra totalmente el elemento*/
     display:flex;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: roboto, Arial, Helvetica, sans-serif;
     margin: 0; /*borro el margen predetermiando del body de 8px*/
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
 }
 nav{
     background-color: var(--color-primario);/*cambio color de fondo*/
@@ -24,6 +26,12 @@ nav{
     align-items: center;/*centra verticalmente todos los elementos del contenedor*/
     justify-content: space-between; /*hago que el primer elemento se posicione en la izquierda y el ultimo elemento a la derecha*/
     color: #FFFFFF; /*cambio el color de la letra a blanco*/
+    position: fixed;
+    width: 100%; /*hago que mi barra de nevegacion ocupe el 100% del ancho de mi pantalla*/
+    top:0;
+    left:0;
+    z-index: 2;
+    box-sizing: border-box; /*meto el padding dentro del 100%*/
 }
 
 .enlaces a{
@@ -34,17 +42,38 @@ nav{
     font-weight: 500; /*cambio el grosor de la letra*/
 
 }
-<<<<<<< HEAD
 .texto{
     color: #FFFFFF; /*cambio el color de la letra a blanco*/
     font-size: 40px; /*cambio el tamaño de letra*/
     font-weight: bold; /*cambio el grosor de la letra*/
+    margin:0;
 }
 main{
     display: grid; /*posisiono los elementos dentro de una grilla*/
     grid-template-columns: 1fr 1fr;
-=======
-header{
-    text-align: center; /*hago que el texto este en medio*/
->>>>>>> bc61ba38e16b62599b357f09de42f47697f15e80
+    padding: 5%;
+    gap: 20px;
+    
+
 }
+.seccion1{
+    grid-column: span 2;
+    margin-top: 0;
+    
+}
+.bodega1{
+   
+
+}
+.bodega2{
+  
+}
+.bodega3{
+ 
+}
+footer{
+    background-color: var(--color-primario);
+    color: #FFFFFF;
+    text-align: center;
+
+}    
