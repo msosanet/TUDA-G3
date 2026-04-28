@@ -11,19 +11,31 @@
         <div class="logo"><strong>Winebox</strong></div>
         <div>
             <a href="index.html">Inicio</a>
-            <a href="categoria.html">Vinos</a>
-            <a href="bodega.html">Bodegas</a>
-            <a href="Contacto.html">Contacto</a>
+            <a href="categoria.html">Productos</a>
+            <a href="categoria.html#tintos">Categoria</a>
+            <a href="#newsletter">Newsletter</a>
         </div>
     </nav>
 
     <header class="hero">
         <h1>DESCUBRE LA EXCELENCIA EN CADA COPA</h1>
-        <p>Seleccion exclusiva de etiquetas premium</p>
+        <p>Seleccion exclusiva de etiquetas premium para cada ocasion</p>
         <a href="categoria.html" class="btn-principal">EXPLORAR CATALOGO</a>
     </header>
 
     <main>
+        <section class="presentacion">
+            <div>
+                <p class="etiqueta">Nuestra tienda</p>
+                <h2>Vinos seleccionados con criterio, origen y calidad</h2>
+            </div>
+            <p>
+                En Winebox reunimos etiquetas tintas, blancas, rosadas y espumantes pensadas para regalar,
+                compartir o acompanar una buena comida. Trabajamos con bodegas reconocidas y propuestas
+                especiales para que cada compra sea clara, simple y confiable.
+            </p>
+        </section>
+
         <h2 class="titulo-seccion">DESTACADOS DE LA SEMANA</h2>
         <section class="productos">
             <div class="tarjeta">
@@ -31,7 +43,7 @@
                 <h3>Reserva Especial "Vinardo Rosato"</h3>
                 <p>Valle de Uco, Mendoza</p>
                 <p class="precio">$75.00</p>
-                <a href="#" class="link-detalle">Ver detalle</a>
+                <a href="categoria.html#rosados" class="link-detalle">Ver detalle</a>
             </div>
 
             <div class="tarjeta">
@@ -39,8 +51,38 @@
                 <h3>Reserva Especial "Michaelo Corleone"</h3>
                 <p>Valle de Uco, Mendoza</p>
                 <p class="precio">$75.00</p>
-                <a href="#" class="link-detalle">Ver detalle</a>
+                <a href="categoria.html#tintos" class="link-detalle">Ver detalle</a>
             </div>
+        </section>
+
+        <section class="newsletter" id="newsletter">
+            <div>
+                <p class="etiqueta">Newsletter</p>
+                <h2>Recibi novedades y ofertas especiales</h2>
+                <p>Sumate para conocer nuevos ingresos, promociones y recomendaciones de temporada.</p>
+            </div>
+            <form action="#newsletter" method="post">
+                <label for="nombre-newsletter">Nombre</label>
+                <input type="text" id="nombre-newsletter" name="nombre-newsletter" placeholder="Tu nombre" required>
+
+                <label for="email-newsletter">Correo electronico</label>
+                <input type="email" id="email-newsletter" name="email-newsletter" placeholder="tu@email.com" required>
+
+                <label for="preferencia-newsletter">Preferencia</label>
+                <select id="preferencia-newsletter" name="preferencia-newsletter">
+                    <option value="tintos">Vinos tintos</option>
+                    <option value="blancos">Vinos blancos</option>
+                    <option value="rosados">Vinos rosados</option>
+                    <option value="espumantes">Espumantes</option>
+                </select>
+
+                <label class="opcion-newsletter">
+                    <input type="checkbox" name="ofertas" checked>
+                    Quiero recibir ofertas especiales
+                </label>
+
+                <button type="submit">Suscribirme</button>
+            </form>
         </section>
     </main>
 
