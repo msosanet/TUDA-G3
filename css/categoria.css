@@ -56,6 +56,17 @@ nav a {
   text-align: center;
 }
 
+/*"botón"*/
+.btn-principal {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 12px 30px;
+  border: 2px solid var(--color-acento);
+  text-decoration: none;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
 .contenedor {
   display: grid;
   grid-template-areas:
