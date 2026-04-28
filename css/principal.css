@@ -125,6 +125,8 @@ nav a {
   box-shadow: 0 0.75rem 1.875rem rgba(44, 44, 44, 0.08);
   overflow: hidden;
   transition: 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .tarjeta img {
@@ -162,10 +164,21 @@ nav a {
 }
 
 .link-detalle {
-  color: #722F37;
-  font-weight: 600;
-  display: inline-block;
-  margin-top: 0.5rem;
+  background-color: #722F37;
+  color: white;
+  font-weight: 700;
+  display: block;
+  margin-top: auto;
+  padding: 0.8rem 1rem;
+  border: 0.125rem solid #D4AF37;
+  border-radius: 0.35rem;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.link-detalle:hover {
+  background-color: #5b252c;
 }
 
 .newsletter {
