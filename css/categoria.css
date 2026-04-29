@@ -178,7 +178,19 @@ color: var(--color-primario);
   font-size: 1.2rem;
 }
 
-
+.link-detalle {
+  background-color: #722F37;
+  color: white;
+  font-weight: 700;
+  display: block;
+  margin-top: auto;
+  padding: 0.8rem 1rem;
+  border: 0.125rem solid #D4AF37;
+  border-radius: 0.35rem;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+}
 
 
 /*footer*/
