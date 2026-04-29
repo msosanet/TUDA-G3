@@ -1,0 +1,177 @@
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            color: #2C2C2C;
+            background-color: #FFFFFF;
+            }           
+        .hero {
+            min-height: 25rem;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/vinos/portada categoria.png') center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 5%;
+            }
+
+        .hero h1 {
+            max-width: 56.25rem;
+            margin: 0;
+            font-size: 2.6rem;
+            line-height: 1.15;
+            }
+
+        .hero p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            }  
+                /* Navegacion */
+        nav {
+            background-color: #722F37;
+            color: white;
+            padding: 0.45rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 0.35rem 1rem rgba(44, 44, 44, 0.16);
+            }
+
+        nav a {
+             color: rgb(255, 255, 255);
+             text-decoration: none;
+             margin-left: 1.25rem;
+             font-weight: 500;
+    }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            white-space: nowrap;
+        }
+
+        .logo img {
+           width: 4.6rem;
+           height: 4.6rem;
+           object-fit: contain;
+           border-radius: 50%;
+        }
+        footer {
+          background-color: #2C2C2C;
+           color: #F9F9F9;
+           text-align: center;
+           padding: 3rem;
+           margin-top: 3.125rem;
+        }
+        main {
+           flex: 1;
+        }
+        #contacto {
+          display:flex;
+          justify-content:center;
+          align-items:center; 
+          margin: 10px 0;
+        }
+        .contact-card {
+            width: min(100%, 540px);
+            padding: 24px;
+            background-color: rgb(#FFFFFF);
+            border-radius: 10px;
+            box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08);
+        }
+        #contacto .header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        #contacto .header h1 {
+            margin-bottom: 0.5rem;
+            font-size: 3rem;
+        }
+
+        #contacto .header p {
+            margin: 0 auto;
+            max-width: 32rem;
+            color: #4a4a4a;
+        }
+
+        .contact-form {
+            margin-bottom: 18px;
+           /* padding-left: 10px;*/
+        }
+        .form-group{
+            margin-top:10px; 
+        }
+
+        .form-radios{
+            padding:10px;
+            display:flex;
+            align-items:center; 
+            gap: 12px; 
+            /*flex-wrap: wrap;*/
+        }
+        
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: #1d1c1c;
+            font-weight: 600;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #D4AF37;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        .contact-form textarea {
+            min-height: 140px;
+            resize: vertical;
+            max-height: 220px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            background-color: rgb(114, 47, 55);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .contact-form button:hover {
+            background-color: rgb(96, 39, 49);
+        }
+        a:hover{
+            color:#D4AF37;
+        }
+        .imagen-vino{
+        min-height: 25rem;
+         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/vinos/portada categoria.png') center/cover;
+                display: flex;
+                 flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 16px;
+                text-align: center;
+                padding: 0 5%;
+}
