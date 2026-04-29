@@ -26,15 +26,22 @@ nav{
     align-items: center;/*centra verticalmente todos los elementos del contenedor*/
     justify-content: space-between; /*hago que el primer elemento se posicione en la izquierda y el ultimo elemento a la derecha*/
     color: #FFFFFF; /*cambio el color de la letra a blanco*/
-    position: fixed;
+    position: fixed; /*hago que el menu baje con el scroll*/
     width: 100%; /*hago que mi barra de nevegacion ocupe el 100% del ancho de mi pantalla*/
     top:0;
     left:0;
     z-index: 2;
     box-sizing: border-box; /*meto el padding dentro del 100%*/
 }
+.enlaces{
+    list-style: none;
+    display: flex; /*activo la*/
+    gap:20px;
+    margin: 0;
+    padding: 0;
+}
 
-.enlaces a{
+.enlaces li a{
     text-align: left; /*ubica los textos a la izquierda*/
     text-decoration: none; /*quito el subrayado de los links*/
     color: #FFFFFF; /*cambio el color de la letra a blanco*/
@@ -63,17 +70,27 @@ main{
 }
 .bodega1{
    
-
+}
+.titulo1{
+    text-align: center;
 }
 .bodega2{
   
 }
+.titulo2{
+     text-align: center;
+}
 .bodega3{
  
 }
+.titulo3{
+     text-align: center;
+}
 footer{
-    background-color: var(--color-primario);
+    background-color: var(--color-texto);
     color: #FFFFFF;
     text-align: center;
+    padding: 2rem; 
+    
 
 }    
