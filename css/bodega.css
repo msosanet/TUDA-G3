@@ -6,8 +6,8 @@
   --color-suave: #F9F9F9; /* Gris humo: Para tarjetas de producto*/
 }
 *{
-    margin: 0;
-    padding: 0;
+     margin: 0;
+     padding: 0;
      box-sizing: border-box; /*meto el padding dentro del 100%*/
    
 }
@@ -46,9 +46,11 @@ nav{
 nav a{
     text-decoration: none; /*quito el subrayado de los links*/
     color: #FFFFFF; /*cambio el color de la letra a blanco*/
-    margin-left: 20px; /*agrego espacio del lado izquierdo*/
+    margin-left: 1.25rem; /*agrego espacio del lado izquierdo*/
     font-weight: 500; /*cambio el grosor de la letra*/
-    margin: 0 10px;
+}
+a:hover{
+    color: var(--color-acento);
 }
 /*contenido del titulo principal*/
 .fondo{
@@ -93,11 +95,35 @@ nav a{
     font-size: 25px; 
     align-self: center; /*posiciono mi strong al centro de mi grilla*/
 }
-footer{
+/*footer*/
+footer{ 
     background-color: var(--color-texto);
     color: #FFFFFF;
-    text-align: center;
-    padding: 2rem; 
+    text-align: center; 
+    padding: 3rem;
+    margin-top: 3.125rem;
     
 
+}
+/*responsive*/
+  @media (max-width: 48rem) {
+  nav {
+    flex-direction: column;
+    gap: 0.875rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+
+  nav div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.625rem 1rem;
+  }
+
+  nav a {
+    margin-left: 0;
+    padding: 0.375rem 0.25rem;
+    font-size: 0.98rem;
+  }
 }    
