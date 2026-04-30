@@ -120,6 +120,7 @@ nav a {
 .menu a:hover {
   background-color: var(--color-primario);
   color: white;
+  border: 0.125rem solid #D4AF37;
 }
 
 /*Contenido*/
@@ -141,56 +142,59 @@ color: var(--color-primario);
   gap: 15px;
   justify-content: center;
  }
-.contenedor div.tarjeta {
-  background-color: var(--color-suave);
-  border-radius: 0.5rem;
-  border: 1px solid #ddd;
-  padding: 15px;
-  text-align: center;
-  transition: 0.3s;
-  box-sizing: border-box;
-}
+  .contenedor div.tarjeta {
+    background-color: var(--color-suave);
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+    box-sizing: border-box;
+  }
 
-.tarjeta:hover {
-  border-bottom: 0.1875rem solid #D4AF37;
-  transform: translateY(-0.25rem);
-  box-shadow: 0 1rem 2.375rem rgba(44, 44, 44, 0.14);
-}
+    .tarjeta:hover {
+      border-bottom: 0.1875rem solid #D4AF37;
+      transform: translateY(-0.25rem);
+      box-shadow: 0 1rem 2.375rem rgba(44, 44, 44, 0.14);
+    }
 
-.tarjeta h3:hover {
-  color: var(--color-primario);
-}
 
-.tarjeta img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
+    .tarjeta h3:hover {
+      color: var(--color-primario);
+      min-height: 2.5em;
+      margin-bottom: 5px;
+    }
 
-.destacado {
-  color:var(--color-primario);
-  font-weight: bold;
-}
+    .tarjeta img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
 
-.precio {
-  color: #722F37;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
+    .destacado {
+      color:var(--color-primario);
+      font-weight: bold;
+    }
 
-.link-detalle {
-  background-color: #722F37;
-  color: white;
-  font-weight: 700;
-  display: block;
-  margin-top: auto;
-  padding: 0.8rem 1rem;
-  border: 0.125rem solid #D4AF37;
-  border-radius: 0.35rem;
-  text-decoration: none;
-  text-align: center;
-  transition: 0.3s;
-}
+    .precio {
+      color: #722F37;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .link-detalle {
+      background-color: #722F37;
+      color: white;
+      font-weight: 700;
+      display: block;
+      margin-top: auto;
+      padding: 0.8rem 1rem;
+      border: 0.125rem solid #D4AF37;
+      border-radius: 0.35rem;
+      text-decoration: none;
+      text-align: center;
+      transition: 0.3s;
+    }
 
 
 /*footer*/
