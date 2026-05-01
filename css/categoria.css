@@ -1,9 +1,13 @@
 :root {
-  --color-fondo: #FFFFFF; /* Blanco: Fondo total */
-  --color-primario: #722F37; /* Vino: Botones y Menus */
-  --color-acento: #D4AF37; /* Oro: Detalles y Hover */
-  --color-texto: #2C2C2C; /* Carbon: Titulos y Cuerpo */
-  --color-suave: #F9F9F9; /* Gris humo: Para tarjetas de producto */
+  --color-fondo: #FFFFFF;
+  --color-primario: #722F37;
+  --color-acento: #D4AF37;
+  --color-texto: #2C2C2C;
+  --color-suave: #F9F9F9;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -13,8 +17,9 @@ body {
   background-color: var(--color-fondo);
 }
 
-/* Navbar */
-nav {  background-color: var(--color-primario);
+/* navbar */
+nav {
+  background-color: var(--color-primario);
   color: white;
   padding: 0.45rem 5%;
   display: flex;
@@ -26,14 +31,14 @@ nav {  background-color: var(--color-primario);
   box-shadow: 0 0.35rem 1rem rgba(44, 44, 44, 0.16);
 }
 
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: 500;
-  }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
 
-/*icono*/
+/* Logo */
 .logo {
   display: flex;
   align-items: center;
@@ -48,143 +53,165 @@ nav {  background-color: var(--color-primario);
   border-radius: 50%;
 }
 
-/*Imagen y titulo de categoria*/
+/* Hero */
 .hero {
-  height: 400px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/vinos/portada\ categoria.png') center/cover;
+  min-height: 25rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/vinos/portada categoria.png') center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
+  padding: 0 5%;
 }
-  /*"botón"*/
-  .btn-principal {
-    background-color: var(--color-primario);
-    color: white;
-    padding: 12px 30px;
-    border: 2px solid var(--color-acento);
-    border-radius: 0.5rem;
-    text-decoration: none;
-    margin-top: 20px;
-    transition: 0.3s;
-  }
+
+.btn-principal {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 12px 30px;
+  border: 2px solid var(--color-acento);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
 
 .contenedor {
   display: grid;
   grid-template-areas:
-    "header header"
     "menu menu"
-    "contenido contenido"
-    "footer footer";
-  grid-template-columns: 1fr 1fr;
+    "contenido contenido";
+  grid-template-columns: 1fr; 
   gap: 1px;
-  margin-top:5px;
+  margin-top: 5px;
   padding: 3px;
+  max-width: 1200px; 
+  margin-left: auto;  
+  margin-right: auto;
 }
-  /* Menu categoria */
-  .contenedor section.menu {
-    grid-area: menu;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: row; /*horizontal*/
-    gap: 20px; /*espacio entre elementos*/  
-    border-bottom: 2px solid var(--color-primario);
-    justify-content: space-around;
-    position: sticky;
-    top: 13px;
-    background-color: white;
-    z-index: 100;
-    align-items: center;
-  }
-    .menu a {
-      text-decoration: none;
-      color: var(--color-oscuro);
-      font-weight: bold;
-      padding: 8px 16px;
-      border-radius: 5px;
-      transition: all 0.3s;
-      
-    }
-    .menu a:hover {
-      background-color: var(--color-primario);
-      color: white;
-      border: 0.125rem solid #D4AF37;
-    }
 
-  /*Contenido*/
-  .contenedor section.contenido {
-    grid-area: contenido;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-    /*Elementos y área tarjetas*/
-    .contenedor section.productos {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 15px;
-      justify-content: center;
-    }
-      .contenedor div.tarjeta {
-        background-color: var(--color-suave);
-        border-radius: 0.5rem;
-        border: 1px solid #ddd;
-        padding: 15px;
-        text-align: center;
-        transition: 0.3s;
-        box-sizing: border-box;
-      }
+/* Menú categoría */
+.contenedor section.menu {
+  grid-area: menu;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 13px;
+  gap: 10px;
+  z-index: 100;
+  border-bottom: 2px solid var(--color-primario);
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
 
-        .tarjeta:hover {
-          transform: translateY(-0.25rem);
-          box-shadow: 0 1rem 2.375rem rgba(44, 44, 44, 0.14);
-        }
+.menu a {
+  text-decoration: none;
+  color: var(--color-texto);
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
 
-        .tarjeta h3:hover {
-          color: var(--color-primario);
-          min-height: 2.5em;
-          margin-bottom: 5px;
-        }
+.menu a:hover {
+  background-color: var(--color-primario);
+  color: white;
+  border: 0.125rem solid var(--color-acento);
+}
 
-        .tarjeta img {
-          width: 100%;
-          height: auto;
-          border-radius: 5px;
-        }
+/* contenido */
+.contenedor section.contenido {
+  grid-area: contenido;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
-        .destacado {
-          color:var(--color-primario);
-          font-weight: bold;
-        }
+/* productos */
+.contenedor section.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-content: center;
+}
 
-        .precio {
-          color: #722F37;
-          font-weight: bold;
-          font-size: 1.2rem;
-        }
+/* tarjetas */
+.contenedor div.tarjeta {
+  background-color: var(--color-suave);
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-        .link-detalle {
-          background-color: #722F37;
-          color: white;
-          font-weight: 700;
-          display: block;
-          margin-top: auto;
-          padding: 0.8rem 1rem;
-          border: 0.125rem solid #D4AF37;
-          border-radius: 0.35rem;
-          text-decoration: none;
-          text-align: center;
-          transition: 0.3s;
-        }
+.tarjeta:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 1rem 2.375rem rgba(44, 44, 44, 0.14);
+}
 
-/*footer*/
+.tarjeta h3 {
+  min-height: 3em;
+  margin-bottom: 5px;
+}
+
+.tarjeta h3:hover {
+  color: var(--color-primario);
+}
+
+.tarjeta img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.destacado {
+  color: var(--color-primario);
+  font-weight: bold;
+}
+
+.precio {
+  color: #722F37;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.link-detalle {
+  background-color: #722F37;
+  color: white;
+  font-weight: 700;
+  display: block;
+  margin-top: auto;
+  padding: 0.8rem 1rem;
+  border: 0.125rem solid #D4AF37;
+  border-radius: 0.35rem;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.link-detalle:hover {
+  background-color: var(--color-acento);
+  color: var(--color-texto);
+}
+
+/* footer */
 footer {
-  grid-area: footer;
   background-color: var(--color-texto);
   color: var(--color-suave);
   text-align: center;
   padding: 2rem;
   margin-top: 50px;
 }
+
