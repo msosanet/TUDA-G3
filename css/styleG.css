@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* Blanco: Fondo total */
+/* Vino: Botones y Menus */
+/* Oro: Detalles y Hover */
+/* Carbon: Titulos y Cuerpo */
+/* Gris humo: Para tarjetas de producto*/
+/* Blanco: Fondo total */
+/* Vino: Botones y Menus */
+/* Oro: Detalles y Hover */
+/* Carbon: Titulos y Cuerpo */
+/* Gris humo: Para tarjetas de producto*/
+/*barra de navegación*/
+nav {
+  background-color: #722F37; /*cambio color de fondo*/
+  padding: 0.45rem 5%;
+  display: flex; /*activo la*/
+  align-items: center; /*centra verticalmente todos los elementos del contenedor*/
+  justify-content: space-between; /*hago que el primer elemento se posicione en la izquierda y el ultimo elemento a la derecha*/
+  color: #FFFFFF; /*cambio el color de la letra a blanco*/
+  position: sticky; /*hago que el menu baje con el scroll*/
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 0.35rem 1rem rgba(44, 44, 44, 0.16);
+}
+
+nav a {
+  text-decoration: none; /*quito el subrayado de los links*/
+  color: #FFFFFF; /*cambio el color de la letra a blanco*/
+  margin-left: 1.25rem; /*agrego espacio del lado izquierdo*/
+  font-weight: 500; /*cambio el grosor de la letra*/
+}
+
+a:hover {
+  color: #D4AF37;
+}/*# sourceMappingURL=styleG.css.map */

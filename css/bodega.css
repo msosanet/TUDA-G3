@@ -1,10 +1,4 @@
-:root{/*galeria de colores*/
---color-fondo: #FFFFFF; /* Blanco: Fondo total */
-  --color-primario: #722F37; /* Vino: Botones y Menus */
-  --color-acento: #D4AF37; /* Oro: Detalles y Hover */
-  --color-texto: #2C2C2C; /* Carbon: Titulos y Cuerpo */
-  --color-suave: #F9F9F9; /* Gris humo: Para tarjetas de producto*/
-}
+
 *{
      margin: 0;
      padding: 0;
@@ -17,19 +11,8 @@ body{
     color: var(--color-texto);
     background-color: var(--color-fondo);
 }
-/*barra de navegación*/
-nav{
-    background-color: var(--color-primario);/*cambio color de fondo*/
-    padding: 0.45rem 5%;
-    display: flex; /*activo la*/
-    align-items: center;/*centra verticalmente todos los elementos del contenedor*/
-    justify-content: space-between; /*hago que el primer elemento se posicione en la izquierda y el ultimo elemento a la derecha*/
-    color: #FFFFFF; /*cambio el color de la letra a blanco*/
-    position: sticky; /*hago que el menu baje con el scroll*/
-    top:0;
-    z-index: 10;
-    box-shadow: 0 0.35rem 1rem rgba(44, 44, 44, 0.16);
-  }
+
+
 .logo{
     display: flex;
     gap: 0.65rem;
@@ -41,16 +24,6 @@ nav{
     width: 4.6rem;
     object-fit: contain;
     border-radius: 50%;
-}
-
-nav a{
-    text-decoration: none; /*quito el subrayado de los links*/
-    color: #FFFFFF; /*cambio el color de la letra a blanco*/
-    margin-left: 1.25rem; /*agrego espacio del lado izquierdo*/
-    font-weight: 500; /*cambio el grosor de la letra*/
-}
-a:hover{
-    color: var(--color-acento);
 }
 /*contenido del titulo principal*/
 .fondo{
