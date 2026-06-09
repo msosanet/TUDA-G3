@@ -62,8 +62,8 @@
         }
         #contacto {
           display:flex;
-          justify-content:center;
-          align-items:center; 
+          /*justify-content: first;
+          align-items:first; */
           margin: 10px 0;
         }
         .contact-card {
@@ -79,15 +79,25 @@
         }
         .contact-form {
             margin-bottom: 18px;
+            justify-content: firsty;
            /* padding-left: 10px;*/
+        }
+        .contact-form2 {
+            margin-bottom: 18px;
+            justify-content: right;
         }
         .form-group{
             margin-top:10px; 
         }
+        .form-group2 {
+            margin-top: 10px;
+            display: flex;
+            justify-content: flex-end;
+        }
         .form-radios{
             padding:10px;
             display:flex;
-            align-items:center; 
+            align-items:first; 
             gap: 12px; 
         }
         .imagen-vino{
@@ -138,6 +148,16 @@
         }
         a:hover{
             color:#D4AF37;
+        }
+        .precentación {
+            min-height: 25rem;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/vinos/portada categoria.png') center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+                
         }
         
         footer {
