@@ -4,11 +4,25 @@
 /* Oro: Detalles y Hover */
 /* Carbon: Titulos y Cuerpo */
 /* Gris humo: Para tarjetas de producto*/
+body {
+  font-family: "Segoe UI", roboto, Arial, Helvetica, sans-serif; /*tipografia*/
+  margin: 0; /*borro el margen predetermiando del body de 8px*/
+  color: #2C2C2C;
+  background-color: #FFFFFF;
+}
+
 /* Blanco: Fondo total */
 /* Vino: Botones y Menus */
 /* Oro: Detalles y Hover */
 /* Carbon: Titulos y Cuerpo */
 /* Gris humo: Para tarjetas de producto*/
+body {
+  font-family: "Segoe UI", roboto, Arial, Helvetica, sans-serif; /*tipografia*/
+  margin: 0; /*borro el margen predetermiando del body de 8px*/
+  color: #2C2C2C;
+  background-color: #FFFFFF;
+}
+
 /*barra de navegación*/
 nav {
   background-color: #722F37; /*cambio color de fondo*/
@@ -28,6 +42,21 @@ nav a {
   color: #FFFFFF; /*cambio el color de la letra a blanco*/
   margin-left: 1.25rem; /*agrego espacio del lado izquierdo*/
   font-weight: 500; /*cambio el grosor de la letra*/
+}
+
+.logo {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.logo img {
+  height: 4.6rem;
+  width: 4.6rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
 }
 
 a:hover {
