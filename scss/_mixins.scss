@@ -1,0 +1,13 @@
+@use "variables" as *;
+
+@mixin boton($fondo, $texto) {
+  padding: 0.55rem 1rem;
+  color: $texto;
+  background-color: $fondo;
+  border: 0.125rem solid $color-dorado;
+  border-radius: $radio-boton;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color $transicion, transform $transicion;
+}
