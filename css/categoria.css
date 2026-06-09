@@ -23,28 +23,23 @@ body {
 
 /* navbar */
 nav {
-  background-color: #722F37;
-  color: white;
-  padding: 0.45rem 5%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  box-shadow: 0 0.35rem 1rem rgba(44, 44, 44, 0.16);
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 1.25rem;
-  font-weight: 500;
-  
-}
+    background-color: #722F37;
+    color: white;
+    padding: 0.45rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 0.35rem 1rem rgba(44, 44, 44, 0.16);
+    }
+ nav a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      margin-left: 1.25rem;
+      font-weight: 500;
+    }
 
 /* Logo */
 .logo {
@@ -137,6 +132,12 @@ nav a {
   background-color: var(--color-primario);
   color: white;
   border: 0.125rem solid var(--color-acento);
+}
+
+.menu h3 {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  color: var(--color-primario);
 }
 
 /* contenido */
