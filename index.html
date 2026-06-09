@@ -3,76 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Winebox, vinoteca especializada en vinos de alta gama y bodegas argentinas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/principal.css">
-    <title>Winebox | Excelencia en cada copa | Bodegas y Vinos de Alta Gama</title>
+    <link rel="stylesheet" href="css/principal-sass.css">
+    <title>Winebox | Vinos y bodegas de alta gama</title>
 </head>
 <body>
-    <nav>
-        <a href="index.html" class="logo">
-            <img src="img/logo-winebox.png" alt="Logo de Winebox">
-            <strong>Winebox</strong>
-        </a>
-        <div>
-            <a href="index.html">Inicio</a>
-            <a href="categoria.html">Vinos</a>
-            <a href="bodega.html">Bodegas</a>
-            <a href="Contacto.html">Contacto</a>
-         </div>
-    </nav>
+    <header class="encabezado">
+        <nav aria-label="Navegación principal">
+            <a href="index.html" class="logo" aria-label="Winebox, ir al inicio">
+                <img src="img/logo-winebox.png" alt="Logo de Winebox">
+                <strong>Winebox</strong>
+            </a>
+            <div class="enlaces-navegacion">
+                <a href="index.html" aria-current="page">Inicio</a>
+                <a href="categoria.html">Productos</a>
+                <a href="categoria.html#tintos">Categorías</a>
+                <a href="#newsletter">Newsletter</a>
+                <a href="bodega.html">Bodegas</a>
+                <a href="Contacto.html">Contacto</a>
+            </div>
+        </nav>
 
-    <header class="hero">
-        <h1>DESCUBRE LA EXCELENCIA EN CADA COPA</h1>
-        <p>Selección exclusiva de etiquetas alta gama</p>
-        <a href="categoria.html" class="btn-principal">EXPLORAR CATALOGO</a>
+        <section class="hero" aria-labelledby="titulo-principal">
+            <p class="etiqueta-hero">Selección de vinos de alta gama</p>
+            <h1 id="titulo-principal">Descubrí la excelencia en cada copa</h1>
+            <p>Etiquetas elegidas por su <strong>origen</strong>, identidad y calidad.</p>
+            <a href="categoria.html" class="btn-principal">Explorar catálogo</a>
+        </section>
     </header>
 
     <main>
-        <h2 class="titulo-seccion">DESTACADOS DE LA SEMANA</h2>
-        <section class="productos">
-            <div class="tarjeta">
-                <img src="img/vinos/vinardo-rosato.png" alt="Vino Vinardo Rosato">
-                <h3>Reserva Especial "Vinardo Rosato"</h3>
-                <p>Valle de Uco, Mendoza.<br> El lugar donde comienza la traición. <br>  Los hermanos Rosato tomaron el viñedo de Pentangeli y crearon una obra maestra.</p>
-                <p class="precio">$73.000,00</p>
-                <a href="Contacto.html" class="link-detalle">Habla con el somelier</a>
-            </div>
-
-            <div class="tarjeta">
-                <img src="img/vinos/michaelo-corleone.png" alt="Vino Michaelo Corleone">
-                <h3>Reserva Especial "Michaelo Corleone"</h3>
-                <p>Corleone, Italia.<br> El poder hace un vino para recordar que Apollonia habita solo en el tiempo.</p>
-                <p class="precio">$89.999,99</p>
-                <a href="Contacto.html" class="link-detalle">Habla con el somelier</a>
-            </div>
-        </section>
-
-        <section class="presentacion">
-            <div>
+        <section class="presentacion" aria-labelledby="titulo-presentacion">
+            <article>
                 <p class="etiqueta">Nuestra tienda</p>
-                <h2>Winebox selecciona vinos con historia, origen y caracter.</h2>
-            </div>
-            <p>
-                Somos una vinoteca dedicada a reunir etiquetas especiales para quienes buscan algo mas que una botella.
-                Elegimos vinos de alta gama, bodegas reconocidas y propuestas con identidad para acompanar regalos,
-                encuentros y momentos importantes.
-            </p>
+                <h2 id="titulo-presentacion">Vinos con historia, origen y carácter</h2>
+                <p>
+                    Winebox es una vinoteca dedicada a reunir etiquetas especiales para quienes buscan
+                    <em>algo más que una botella</em>. Seleccionamos vinos de alta gama y bodegas reconocidas
+                    para acompañar regalos, encuentros y momentos importantes.
+                </p>
+                <ul class="beneficios">
+                    <li>Selección de bodegas argentinas.</li>
+                    <li>Recomendaciones según cada ocasión.</li>
+                    <li>Atención personalizada de nuestro sommelier.</li>
+                </ul>
+            </article>
+
+            <aside class="recomendacion rounded-xl border shadow-lg p-4" aria-labelledby="titulo-recomendacion">
+                <p class="etiqueta">Consejo Winebox</p>
+                <h2 id="titulo-recomendacion" class="text-xl font-bold">Elegí el vino indicado</h2>
+                <p class="text-gray-700">
+                    Considerá el menú, la ocasión y los gustos de quienes compartirán la mesa.
+                </p>
+                <a href="Contacto.html" class="inline-block rounded-lg bg-amber-700 px-4 py-2 font-bold text-white">
+                    Consultar al sommelier
+                </a>
+            </aside>
         </section>
 
-        <section class="newsletter" id="newsletter">
+        <section class="seccion-destacados" aria-labelledby="titulo-destacados">
+            <div class="titulo-contenedor">
+                <p class="etiqueta">Selección especial</p>
+                <h2 id="titulo-destacados" class="titulo-seccion">Destacados de la semana</h2>
+            </div>
+
+            <div class="productos">
+                <article class="tarjeta">
+                    <figure>
+                        <img src="img/vinos/vinardo-rosato.png" alt="Botella de vino Vinardo Rosato">
+                        <figcaption>Reserva rosada del Valle de Uco, Mendoza.</figcaption>
+                    </figure>
+                    <h3>Reserva Especial “Vinardo Rosato”</h3>
+                    <p>Una etiqueta fresca y expresiva, ideal para acompañar entradas y tardes de verano.</p>
+                    <p class="precio"><strong>$73.000,00</strong></p>
+                    <a href="Contacto.html" class="link-detalle">Hablar con el sommelier</a>
+                </article>
+
+                <article class="tarjeta">
+                    <figure>
+                        <img src="img/vinos/michaelo-corleone.png" alt="Botella de vino Michaelo Corleone">
+                        <figcaption>Reserva italiana de carácter intenso.</figcaption>
+                    </figure>
+                    <h3>Reserva Especial “Michaelo Corleone”</h3>
+                    <p>Un vino elegante y persistente para cenas, celebraciones y regalos especiales.</p>
+                    <p class="precio"><strong>$89.999,99</strong></p>
+                    <a href="Contacto.html" class="link-detalle">Hablar con el sommelier</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="comparativa" aria-labelledby="titulo-comparativa">
+            <div class="titulo-contenedor">
+                <p class="etiqueta">Comparación de herramientas</p>
+                <h2 id="titulo-comparativa">Un botón, cuatro formas de construirlo</h2>
+                <p>El contenido HTML es el mismo; cada herramienta aporta una forma distinta de presentación.</p>
+            </div>
+
+            <div class="comparativa-grid">
+                <article class="ejemplo">
+                    <h3>HTML sin estilos</h3>
+                    <button type="button">Ver producto</button>
+                    <p>HTML define la estructura y el significado del botón.</p>
+                </article>
+
+                <article class="ejemplo ejemplo-sass">
+                    <h3>HTML + SASS</h3>
+                    <button type="button" class="boton-sass">Ver producto</button>
+                    <p>SASS permite organizar y reutilizar estilos propios compilados a CSS.</p>
+                </article>
+
+                <article class="ejemplo">
+                    <h3>HTML + Bootstrap</h3>
+                    <button type="button" class="btn btn-dark">Ver producto</button>
+                    <p>Bootstrap ofrece componentes listos mediante clases predefinidas.</p>
+                </article>
+
+                <article class="ejemplo">
+                    <h3>HTML + Tailwind</h3>
+                    <button type="button" class="rounded-lg bg-slate-800 px-4 py-2 font-bold text-white shadow-md">
+                        Ver producto
+                    </button>
+                    <p>Tailwind combina utilidades pequeñas directamente en el HTML.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="newsletter" id="newsletter" aria-labelledby="titulo-newsletter">
             <div>
                 <p class="etiqueta">Newsletter</p>
-                <h2>Unite al club del vino más austral y exclusivo.</h2>
-                <p>Conoce nuestros nuevos ingresos, las mejores promociones y recomendaciones de temporada. </p>
+                <h2 id="titulo-newsletter">Unite al club del vino más austral</h2>
+                <p>Conocé nuevos ingresos, promociones y recomendaciones de temporada.</p>
             </div>
+
             <form action="#newsletter" method="post">
                 <label for="nombre-newsletter">Nombre</label>
-                <input type="text" id="nombre-newsletter" name="nombre-newsletter" placeholder="Tu nombre" required>
+                <input type="text" id="nombre-newsletter" name="nombre" placeholder="Tu nombre" required>
 
-                <label for="email-newsletter">Correo electronico</label>
-                <input type="email" id="email-newsletter" name="email-newsletter" placeholder="tu@email.com" required>
+                <label for="email-newsletter">Correo electrónico</label>
+                <input type="email" id="email-newsletter" name="email" placeholder="tu@email.com" required>
 
                 <label for="preferencia-newsletter">Preferencia</label>
-                <select id="preferencia-newsletter" name="preferencia-newsletter">
+                <select id="preferencia-newsletter" name="preferencia">
                     <option value="tintos">Vinos tintos</option>
                     <option value="blancos">Vinos blancos</option>
                     <option value="rosados">Vinos rosados</option>
@@ -91,6 +168,7 @@
 
     <footer>
         <p>&copy; 2026 Winebox - Todos los derechos reservados.</p>
+        <p><a href="index.html">Inicio</a> · <a href="categoria.html">Productos</a> · <a href="#newsletter">Newsletter</a></p>
     </footer>
 </body>
 </html>
