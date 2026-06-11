@@ -151,15 +151,15 @@
         }
         .precentación {
             min-height: 25rem;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/vinos/portada categoria.png') center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url center/cover;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            
+
                 
         }
-        
+    
         footer {
           background-color: #2C2C2C;
            color: #F9F9F9;
@@ -190,12 +190,12 @@
         }
        }  
        .btn-principal {
-  background-color: var(--color-primario);
-  color: white;
-  padding: 12px 30px;
-  border: 2px solid var(--color-acento);
-  border-radius: 0.5rem;
-  text-decoration: none;
-  margin-top: 20px;
-  transition: 0.3s;
-} 
+        background-color: var(--color-primario);
+        color: white;
+        padding: 12px 30px;
+        border: 2px solid var(--color-acento);
+        border-radius: 0.5rem;
+        text-decoration: none;
+        margin-top: 20px;
+        transition: 0.3s;
+       } 

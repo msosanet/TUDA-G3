@@ -5,67 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/contacto.css">
-    <title>Winebox - Contactos</title>
+    <title>Winebox - Contactos</title><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <nav>
-        <div class="logo">
-            <img src="img/logo-winebox.png" alt="Logo de Winebox">
-            <strong>Winebox</strong>
+<body class="bg-white text-gray-900">
+   
+    <nav class="sticky top-0 z-10 bg-red-900 text-white px-5 md:px-10 py-3 shadow-lg flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
+        <div class="flex items-center gap-3 whitespace-nowrap">
+            <img src="img/logo-winebox.png" alt="Logo de Winebox" class="w-12 h-12 rounded-full object-contain">
+            <strong class="text-lg">Winebox</strong>
         </div>
-        <div>
-            <a href="index.html" title="enlace a inicio">Inicio</a>
-            <a href="categoria.html" title="enlace a vinos">Vinos</a>
-            <a href="bodega.html" title="enlace a bodegas">Bodegas</a>
-            <a href="Contacto.html" title="enlace a contacto">Contacto</a>
+        <div class="flex flex-wrap justify-center md:justify-start gap-6 md:gap-5">
+            <a href="index.html" title="enlace a inicio" class="hover:text-yellow-400 transition-colors">Inicio</a>
+            <a href="categoria.html" title="enlace a vinos" class="hover:text-yellow-400 transition-colors">Vinos</a>
+            <a href="bodega.html" title="enlace a bodegas" class="hover:text-yellow-400 transition-colors">Bodegas</a>
+            <a href="Contacto.html" title="enlace a contacto" class="hover:text-yellow-400 transition-colors">Contacto</a>
         </div>
     </nav>
-       <main>
-        <div class="imagen-vino">
-                <h1>CONTACTO</h1>
-                    <p>Los mejores vinos seleccionados para ti</p>
+
+    <main class="flex-1">
+        <div class="min-h-96 bg-cover bg-center flex flex-col items-center justify-center text-center text-white px-5" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/vinos/portada categoria.png')">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">CONTACTO</h1>
+            <p class="text-lg md:text-xl">Los mejores vinos seleccionados para ti</p>
         </div>
-        <section id="contacto">
-            <div class="contact-card">
-                <header class="header">
-                 </header>
-                <form class="contact-form" method="POST" action="#">
-                    <div class="form-group">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="mensaje">Mensaje:</label>     <!--borre el required-->
-                        <textarea id="mensaje" name="mensaje" rows="2"></textarea>
-                    </div>
-                    <span>Calificar Atención:</span>
-                    <div class="form-radios">   
-                        <label for="calificar_1"><input type="radio" name="calificar" id="calificar_1" value="1" required>Pésima</label>
-                        <label for="calificar_2"><input type="radio" name="calificar" id="calificar_2" value="2">Aceptable</label>
-                        <label for="calificar_3"><input type="radio" name="calificar" id="calificar_3" value="3">Buena</label>
-                        <label for="calificar_4"><input type="radio" name="calificar" id="calificar_4" value="4">Excelente</label>
-                    </div>
-                    <button type="submit"> 
-                        <!--<a href="https://wa.me/542901471028?text=Hola,%20me%20interesan%20los%20vinos%20ricos%20ricones." class="btn-principal"></a>
-                    -->
-                    Enviar Formulario</button>
-                    </form>
-                    </section>
-                    <section class="precentación"></section>
-                    <form class="contact-form2" method="POST" action="#">
-                        <div class="form-group2">
-                            <label for="Nosotros"><a href="https://youtu.be/IQ9kDtbwoaw?si=rkWcI7QukTd7OWOS" title="enlace a inicio">Nosotros</a></label>
-                            <label for="Como comprar"><a href="https://youtu.be/JgBml1tj3Wo?si=g0JrfV7fGYoOXpvl" title="enlace a vinos">Como comprar</a></label>
-                            <a href="https://youtu.be/JgBml1tj3Wo?si=g0JrfV7fGYoOXpvl" title="enlace a bodegas">Terminos y condiciones</a>
-                            <a href="https://youtu.be/JgBml1tj3Wo?si=g0JrfV7fGYoOXpvl" title="enlace a contacto">Libro de quejas online</a>
+
+        <section id="contacto" class="flex justify-center py-8 px-5">
+            <div class="w-full max-w-6xl flex flex-col md:flex-row gap-8">
+
+                <div class="flex-1 bg-white rounded-xl shadow-lg p-6 md:p-8">
+                    <form method="POST" action="#">
+                        <h2 class="text-2xl font-bold mb-6 text-gray-800">Formulario de Contacto</h2>
+                        <div class="mb-4">
+                            <label for="nombre" class="block text-sm font-semibold text-gray-900 mb-2">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required class="w-full px-4 py-3 border-2 border-yellow-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
                         </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-semibold text-gray-900 mb-2">Correo electrónico:</label>
+                            <input type="email" id="email-sus" name="email" placeholder="tu@email.com" required class="w-full px-4 py-3 border-2 border-yellow-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                    
+                        </div>
+                        <div class="mb-6">
+                            <label for="mensaje" class="block text-sm font-semibold text-gray-900 mb-2">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" class="w-full px-4 py-3 border-2 border-yellow-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 resize-none"></textarea>
+                        </div>
+
+                        <div class="mb-6">
+                            <p class="text-sm font-semibold text-gray-900 mb-3">Calificar Atención:</p>
+                            <div class="flex flex-wrap gap-4">
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="calificar" value="1" required class="w-4 h-4 cursor-pointer">
+                                    <span class="text-sm">Pésima</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="calificar" value="2" class="w-4 h-4 cursor-pointer">
+                                    <span class="text-sm">Aceptable</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="calificar" value="3" class="w-4 h-4 cursor-pointer">
+                                    <span class="text-sm">Buena</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="calificar" value="4" class="w-4 h-4 cursor-pointer">
+                                    <span class="text-sm">Excelente</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full bg-[#722F37] text-white font-semibold py-4 px-6 text-lg rounded-lg hover:bg-yellow-600 transition-colors">Enviar Formulario</button>
                     </form>
-                    </section>
-                </form>
-           </div>
+                </div>
+                <div class="flex-1 bg-white rounded-xl shadow-lg p-6 md:p-8">
+                    <form class="space-y-4" method="POST" action="#">
+                        <h2 class="text-2xl font-bold mb-6 text-gray-800">Newsletter</h2>
+
+                        <div class="mb-4">
+                            <label for="Nosotros" class="text-sm font-semibold text-gray-900">
+                                <a href="https://youtu.be/IQ9kDtbwoaw?si=rkWcI7QukTd7OWOS" title="enlace a inicio" class="text-red-900 hover:text-yellow-600 transition-colors">Nosotros</a>
+                            </label>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="email-sus" class="block text-sm font-semibold text-gray-900 mb-2">Correo electrónico</label>
+                            <input type="email" id="email-sus" name="email" placeholder="tu@email.com" required class="w-full px-4 py-3 border-2 border-yellow-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="preguntas-frecueentes" class="block text-sm font-semibold text-gray-900 mb-2">Preguntas frecuentes</label>
+                            <select id="preguntas-frecueentes" name="preguntas" class="w-full px-4 py-3 border-2 border-yellow-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                                <option value="Preguntas">¿Cómo compro en Winebox?</option>
+                                <option value="Preguntas">¿Qué pasa si compro y luego no hay producto?</option>
+                                <option value="Preguntas">¿Cuanto tarda en llegar el pedido?</option>
+                                <option value="Preguntas">¿Puedo pasar a retirar la compra?</option>
+                                <option value="Preguntas">¿Cómo puedo promocionar mis producto en Winebox?</option>
+                            </select>
+                        </div>
+                        <label class="flex items-center gap-3 cursor-pointer mb-4">
+                            <input type="checkbox" name="ofertas" checked class="w-4 h-4 cursor-pointer">
+                            <span class="text-sm font-semibold text-gray-900">Quiero recibir ofertas especiales</span>
+                        </label>
+                        <button type="submit" class="w-full bg-[#722F37] text-white font-semibold py-4 px-6 text-lg rounded-lg hover:bg-yellow-600 transition-colors">Suscribirme</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="bg-gray-800 text-gray-100 text-center py-12 mt-12">
         <p>&copy; 2026 Winebox. Todos los derechos reservados.</p>
     </footer>
 </body>
