@@ -1,4 +1,12 @@
 
+:root {
+  --color-fondo: #FFFFFF;
+  --color-primario: #722F37;
+  --color-acento: #D4AF37;
+  --color-texto: #2C2C2C;
+  --color-suave: #F9F9F9;
+}
+
 *{
      margin: 0;
      padding: 0;
@@ -37,6 +45,20 @@ main {
 
 .bodega h3{
     text-align: center;
+    background-color: var(--color-suave);
+    border-radius: 0.5rem;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    gap: 5px;
+    position: relative;
 }
 
 .proxima{
@@ -51,6 +73,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .imagen-contenedor img {
