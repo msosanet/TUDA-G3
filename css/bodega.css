@@ -6,53 +6,64 @@
    
 }
 /*contenido del titulo principal*/
-.fondo{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bodega/fondo-bodega.avif);
-    min-height: 25rem;
-    background-repeat: no-repeat; /*quito la repeticion de la imagen que cubre todo el elemento*/
-    background-position: center; /*posiciono la imagen al centro*/
-    background-size: cover; /*hace que la imagen cubra totalmente el elemento*/
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0 5%;
-}
 .texto{
     color: #FFFFFF; /*cambio el color de la letra a blanco*/
     font-weight: 50px; /*cambio el grosor de la letra*/
 }
-/*contenido*/
-/*
-.seccion1{
-    display: grid; /*posisiono los elementos dentro de una grilla* /
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin: 0 5%;
 
+main {
+    margin: 0 5%;
+    padding-top: 20px;
 }
-.texto2{
-    grid-column: 1/-1;
-    
-    
+
+.bodega {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-*/
+
+.bodega img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 .bodega h3{
     text-align: center;
-  
- 
 }
+
 .proxima{
     text-align: center;
     font-size: 25px; 
     align-self: center; /*posiciono mi strong al centro de mi grilla*/
 }
+ 
+.imagen-contenedor {
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.imagen-contenedor img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
 
-    
-    
+#carrusel {
+    width: 100%;
+}
 
-
-
-  
+.imagen-baja {
+    transform: translateY(60px);  /* Baja la imagen 20px */
+}
