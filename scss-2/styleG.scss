@@ -1,0 +1,17 @@
+@import "./variables";
+@import "./nav";
+@import "./responsive";
+
+ body{
+    font-family: 'roboto', 'Segoe UI', Arial, Helvetica, sans-serif; /*tipografia*/
+    margin: 0; /*borro el margen predetermiando del body de 8px*/
+    color: $color-texto;
+    background-color: $color-fondo;
+}
+ footer {
+  background-color: $color-texto;
+  color: $color-suave;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 50px;
+}

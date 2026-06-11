@@ -1,0 +1,19 @@
+.ejemplo-sass .boton-sass {
+  padding: 0.55rem 1rem;
+  color: #ffffff;
+  background-color: #722f37;
+  border: 0.125rem solid #d4af37;
+  border-radius: 0.35rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.ejemplo-sass .boton-sass:hover {
+  background-color: #5b252c;
+  transform: translateY(-0.125rem);
+}
+.ejemplo-sass .boton-sass:focus-visible {
+  outline: 0.1875rem solid rgba(212, 175, 55, 0.45);
+  outline-offset: 0.1875rem;
+}/*# sourceMappingURL=principal.css.map */
