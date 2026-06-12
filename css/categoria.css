@@ -176,72 +176,73 @@ nav {
 
 /* tarjetas */
 .contenedor div.tarjeta {
-  background-color: var(--color-suave);
-  border-radius: 0.5rem;
-  border: 1px solid #ddd;
-  padding: 15px;
-  text-align: center;
-  transition: 0.3s;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.tarjeta:hover {
-  transform: translateY(-0.25rem);
-  box-shadow: 0 1rem 2.375rem rgba(44, 44, 44, 0.14);
-}
-
-.tarjeta h3 {
-  overflow: hidden;
-  min-height: 3em;
-  margin-bottom: 5px;
-}
-
-.tarjeta h3:hover {
-  color: var(--color-primario);
+    background-color: var(--color-suave);
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    gap: 5px;
+    position: relative;
 }
 
 .tarjeta img {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
-  border-radius: 5px;
-  object-fit: contain;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
-.destacado {
-  color: var(--color-primario);
-  font-weight: bold;
+.tarjeta h3 {
+    overflow: hidden;
+    min-height: 3em;
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+
+.tarjeta p {
+    flex-grow: 1;
+    margin: 0;
 }
 
 .precio {
-  color: #722F37;
-  font-weight: bold;
-  font-size: 1.2rem;
+    color: #722F37;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 5px 0;
+    flex-shrink: 0;
+    bottom: 70px;
 }
 
 .link-detalle {
-  background-color: #722F37;
-  color: white;
-  font-weight: 700;
-  display: block;
-  margin-top: auto;
-  padding: 0.8rem 1rem;
-  border: 0.125rem solid #D4AF37;
-  border-radius: 0.35rem;
-  text-decoration: none;
-  text-align: center;
-  transition: 0.3s;
-  width: 100%;
-  box-sizing: border-box;
+    background-color: #722F37;
+    color: white;
+    font-weight: 700;
+    display: block;
+    margin-top: auto;
+    padding: 0.8rem 1rem;
+    border: 0.125rem solid #D4AF37;
+    border-radius: 0.35rem;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
 }
 
 .link-detalle:hover {
-  background-color: var(--color-acento);
-  color: var(--color-texto);
+    background-color: var(--color-acento);
+    color: var(--color-texto);
 }
 
 /* footer */
