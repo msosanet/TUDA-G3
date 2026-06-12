@@ -1,3 +1,20 @@
-.row > article {
-    
+
+.btn-comprar{
+    padding: 12px 40px;
+    font-size: 1.2rem;
+}
+
+.p-precio{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.img-vino{
+    border-right: 1px solid #585858;
+    padding-right: 1rem;
+}
+@media (max-width: 991.98px){
+    .img-vino{
+        border-right: none;
+        padding-right: 0;
+    }
 }
