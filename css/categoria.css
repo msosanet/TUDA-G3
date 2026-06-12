@@ -196,10 +196,11 @@ nav {
 .tarjeta img {
     width: 100%;
     max-width: 150px;
-    height: auto;
+    height: 250px;
     border-radius: 5px;
     object-fit: contain;
     flex-shrink: 0;
+    object-fit: contain;
 }
 
 .tarjeta h3 {
