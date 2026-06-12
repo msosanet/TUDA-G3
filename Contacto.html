@@ -8,8 +8,7 @@
     <title>Winebox - Contactos</title><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-white text-gray-900">
-   
-    <nav class="sticky top-0 z-10 bg-red-900 text-white px-5 md:px-10 py-3 shadow-lg flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
+   <nav class="sticky top-0 z-10 bg-[#722F37] text-white px-5 md:px-10 py-3 shadow-lg flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
         <div class="flex items-center gap-3 whitespace-nowrap">
             <img src="img/logo-winebox.png" alt="Logo de Winebox" class="w-12 h-12 rounded-full object-contain">
             <strong class="text-lg">Winebox</strong>
@@ -20,93 +19,96 @@
             <a href="bodega.html" title="enlace a bodegas" class="hover:text-yellow-400 transition-colors">Bodegas</a>
             <a href="Contacto.html" title="enlace a contacto" class="hover:text-yellow-400 transition-colors">Contacto</a>
         </div>
-    </nav>
-
+    </nav> 
     <main class="flex-1">
-        <div class="min-h-96 bg-cover bg-center flex flex-col items-center justify-center text-center text-white px-5" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/vinos/portada categoria.png')">
-            <h1 class="text-4xl md:text-5xl font-bold mb-2">CONTACTO</h1>
-            <p class="text-lg md:text-xl">Los mejores vinos seleccionados para ti</p>
-        </div>
+<div class="w-full min-h-[20rem] sm:min-h-[24rem] md:min-h-[28rem] lg:min-h-[32rem] xl:min-h-[36rem] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center text-center text-white px-5 sm:px-8 md:px-10 xl:px-16" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/vinos/portada categoria.png');">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3">CONTACTO</h1>
+    <p class="max-w-2xl text-base sm:text-lg md:text-xl">Los mejores vinos seleccionados para ti</p>
+</div>
 
-        <section id="contacto" class="flex justify-center py-8 px-5">
-            <div class="w-full max-w-6xl flex flex-col md:flex-row gap-8">
+        <section id="contacto" class="px-5 py-8 sm:px-8 md:px-12 lg:px-16">
+            <div class="mx-auto flex w-full max-w-6xl flex-col gap-6 sm:gap-8 md:gap-10 md:flex-row">
 
-                <div class="flex-1 bg-white rounded-xl shadow-lg p-6 md:p-8">
+                <div class="flex-1 bg-white rounded-xl shadow-lg p-5 sm:p-6 md:p-8">
                     <form method="POST" action="#">
-                        <h2 class="text-2xl font-bold mb-6 text-gray-800">Formulario de Contacto</h2>
-                        <div class="mb-4">
-                            <label for="nombre" class="block text-sm font-semibold text-gray-900 mb-2">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" required class="w-full px-4 py-3 border-2 border-yellow-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                        <h2 class="text-xl sm:text-2xl font-bold mb-5 sm:mb-6 text-gray-800">Encuesta</h2>
+                        <div class="mb-5">
+                            <label for="nombre" class="block text-xs sm:text-sm font-semibold text-gray-900 mb-2">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required class="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base border-2 border-yellow-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
                         </div>
-                        <div class="mb-4">
-                            <label for="email" class="block text-sm font-semibold text-gray-900 mb-2">Correo electrónico:</label>
-                            <input type="email" id="email-sus" name="email" placeholder="tu@email.com" required class="w-full px-4 py-3 border-2 border-yellow-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                        <div class="mb-5">
+                            <label for="email" class="block text-xs sm:text-sm font-semibold text-gray-900 mb-2">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required class="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base border-2 border-yellow-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
                     
                         </div>
-                        <div class="mb-6">
-                            <label for="mensaje" class="block text-sm font-semibold text-gray-900 mb-2">Mensaje:</label>
-                            <textarea id="mensaje" name="mensaje" rows="5" class="w-full px-4 py-3 border-2 border-yellow-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 resize-none"></textarea>
+                        <div class="mb-5">
+                            <label for="mensaje" class="block text-xs sm:text-sm font-semibold text-gray-900 mb-2">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" class="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base border-2 border-yellow-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 resize-none"></textarea>
                         </div>
-
-                        <div class="mb-6">
-                            <p class="text-sm font-semibold text-gray-900 mb-3">Calificar Atención:</p>
-                            <div class="flex flex-wrap gap-4">
+                        <div class="mb-5">
+                            <p class="text-xs sm:text-sm font-semibold text-gray-900 mb-3">Calificar Atención:</p>
+                            <div class="flex flex-wrap gap-3 sm:gap-4">
                                 <label class="flex items-center gap-2 cursor-pointer">
                                     <input type="radio" name="calificar" value="1" required class="w-4 h-4 cursor-pointer">
-                                    <span class="text-sm">Pésima</span>
+                                    <span class="text-xs sm:text-sm">Pésima</span>
                                 </label>
                                 <label class="flex items-center gap-2 cursor-pointer">
                                     <input type="radio" name="calificar" value="2" class="w-4 h-4 cursor-pointer">
-                                    <span class="text-sm">Aceptable</span>
+                                    <span class="text-xs sm:text-sm">Aceptable</span>
                                 </label>
                                 <label class="flex items-center gap-2 cursor-pointer">
                                     <input type="radio" name="calificar" value="3" class="w-4 h-4 cursor-pointer">
-                                    <span class="text-sm">Buena</span>
+                                    <span class="text-xs sm:text-sm">Buena</span>
                                 </label>
                                 <label class="flex items-center gap-2 cursor-pointer">
                                     <input type="radio" name="calificar" value="4" class="w-4 h-4 cursor-pointer">
-                                    <span class="text-sm">Excelente</span>
+                                    <span class="text-xs sm:text-sm">Excelente</span>
                                 </label>
                             </div>
                         </div>
-                        <button type="submit" class="w-full bg-[#722F37] text-white font-semibold py-4 px-6 text-lg rounded-lg hover:bg-yellow-600 transition-colors">Enviar Formulario</button>
+                        <button type="submit" class="w-full bg-[#722F37] text-white font-semibold py-3 sm:py-4 px-5 sm:px-6 text-sm sm:text-lg rounded-lg hover:bg-yellow-600 transition-colors">Enviar Formulario</button>
                     </form>
                 </div>
-                <div class="flex-1 bg-white rounded-xl shadow-lg p-6 md:p-8">
+                <div class="flex-1 bg-white rounded-xl shadow-lg p-5 sm:p-6 md:p-8">
                     <form class="space-y-4" method="POST" action="#">
-                        <h2 class="text-2xl font-bold mb-6 text-gray-800">Newsletter</h2>
+                        <h2 class="text-xl sm:text-2xl font-bold mb-5 sm:mb-6 text-gray-800">Ayuda</h2>
 
-                        <div class="mb-4">
-                            <label for="Nosotros" class="text-sm font-semibold text-gray-900">
-                                <a href="https://youtu.be/IQ9kDtbwoaw?si=rkWcI7QukTd7OWOS" title="enlace a inicio" class="text-red-900 hover:text-yellow-600 transition-colors">Nosotros</a>
-                            </label>
+                        <div class="mb-5">
+                            <a href="https://youtu.be/IQ9kDtbwoaw?si=rkWcI7QukTd7OWOS" title="enlace a  
+                            inicio" class="text-red-900 hover:text-yellow-600 transition-colors text-xs sm:text-sm font-semibold">Nosotros</a>
                         </div>
 
-                        <div class="mb-4">
-                            <label for="email-sus" class="block text-sm font-semibold text-gray-900 mb-2">Correo electrónico</label>
-                            <input type="email" id="email-sus" name="email" placeholder="tu@email.com" required class="w-full px-4 py-3 border-2 border-yellow-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                        <div class="space-y-3 sm:space-y-4">
+                            <h3 class="text-base sm:text-lg font-semibold text-gray-900">Preguntas frecuentes</h3>
+                            <details class="rounded-2xl border border-gray-200 p-3 sm:p-4">
+                                <summary class="cursor-pointer font-semibold text-xs sm:text-sm">¿Cómo compro en Winebox?</summary>
+                                <p class="mt-3 text-xs sm:text-sm text-gray-700">A través del sitio web las 24 hs. También podés comprar por teléfono o e-mail.</p>
+                            </details>
+                            <details class="rounded-2xl border border-gray-200 p-3 sm:p-4">
+                                <summary class="cursor-pointer font-semibold text-xs sm:text-sm">¿Qué pasa si compro y luego no hay producto?</summary>
+                                <p class="mt-3 text-xs sm:text-sm text-gray-700">Si el producto no está disponible, te contactamos para ofrecerte cambio o reintegro.</p>
+                            </details>
+                            <details class="rounded-2xl border border-gray-200 p-3 sm:p-4">
+                                <summary class="cursor-pointer font-semibold text-xs sm:text-sm">¿Cuánto tarda en llegar el pedido?</summary>
+                                <p class="mt-3 text-xs sm:text-sm text-gray-700">El tiempo de entrega promedio es 48 horas en CABA, pero puede variar según el producto.</p>
+                            </details>
+                            <details class="rounded-2xl border border-gray-200 p-3 sm:p-4">
+                                <summary class="cursor-pointer font-semibold text-xs sm:text-sm">¿Puedo pasar a retirar la compra?</summary>
+                                <p class="mt-3 text-xs sm:text-sm text-gray-700">Sí, te avisamos cuando tu pedido esté listo para retirar.</p>
+                            </details>
+                            <details class="rounded-2xl border border-gray-200 p-3 sm:p-4">
+                                <summary class="cursor-pointer font-semibold text-xs sm:text-sm">¿Cómo puedo promocionar mis producto en Winebox?</summary>
+                                <p class="mt-3 text-xs sm:text-sm text-gray-700">Mandanos un mail a info@espaciovino.com.ar para presentar tu propuesta.</p>
+                            </details>
                         </div>
-                        <div class="mb-4">
-                            <label for="preguntas-frecueentes" class="block text-sm font-semibold text-gray-900 mb-2">Preguntas frecuentes</label>
-                            <select id="preguntas-frecueentes" name="preguntas" class="w-full px-4 py-3 border-2 border-yellow-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
-                                <option value="Preguntas">¿Cómo compro en Winebox?</option>
-                                <option value="Preguntas">¿Qué pasa si compro y luego no hay producto?</option>
-                                <option value="Preguntas">¿Cuanto tarda en llegar el pedido?</option>
-                                <option value="Preguntas">¿Puedo pasar a retirar la compra?</option>
-                                <option value="Preguntas">¿Cómo puedo promocionar mis producto en Winebox?</option>
-                            </select>
-                        </div>
-                        <label class="flex items-center gap-3 cursor-pointer mb-4">
-                            <input type="checkbox" name="ofertas" checked class="w-4 h-4 cursor-pointer">
-                            <span class="text-sm font-semibold text-gray-900">Quiero recibir ofertas especiales</span>
-                        </label>
-                        <button type="submit" class="w-full bg-[#722F37] text-white font-semibold py-4 px-6 text-lg rounded-lg hover:bg-yellow-600 transition-colors">Suscribirme</button>
-                    </form>
+
+                        <a href="https://youtu.be/IQ9kDtbwoaw?si=cOM6NmMVFyo5Ky45" class="inline-flex w-full items-center justify-center rounded-lg bg-[#722F37] py-3 sm:py-4 px-5 sm:px-6 text-sm sm:text-lg font-semibold text-white transition-colors hover:bg-yellow-600">Suscribirme</a>
+                    </div>
                 </div>
             </div>
         </section>
-    </main><footer class="bg-gray-800 text-gray-100 text-center py-12 mt-12">
-        <p>&copy; 2026 Winebox. Todos los derechos reservados.</p>
+        </main><footer class="bg-[#2C2C2C] text-gray-100 text-center py-8 sm:py-10 md:py-12 mt-8 sm:mt-10 md:mt-12 px-5">
+        <p class="text-xs sm:text-sm">&copy; 2026 Winebox. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
