@@ -1,9 +1,13 @@
 
 .btn-comprar{
-    padding: 12px 40px;
-    font-size: 1.2rem;
+    padding: 10px 30px;
+    font-size: 1rem;
 }
 
+.btn-carrito{
+    padding: 10px 30px;
+    font-size: 1rem;
+}
 .p-precio{
     font-size: 2rem;
     font-weight: bold;

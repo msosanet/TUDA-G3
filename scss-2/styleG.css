@@ -68,6 +68,10 @@ a:hover {
     font-size: 0.98rem;
   }
 }
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   font-family: "roboto", "Segoe UI", Arial, Helvetica, sans-serif; /*tipografia*/
   margin: 0; /*borro el margen predetermiando del body de 8px*/
