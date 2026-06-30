@@ -11,32 +11,115 @@
 
 {
     "id": 2,
-    "title": "Dv Catena Chardonnay",
-    "description": "Vino Blanco",
-    "price": 16900,
+    "title": "Angélica Zapata Malbec",
+    "description": "Vino Tinto",
+    "price": 29500,
     "pictures":[
-        "./img/vinos/blancos/catena chardonnay chardonnay.webp"
+        "./img/vinos/tintos/algelica-zapata-malbec.webp"
     ]
 },
 
 {
     "id": 3,
-    "title": "Garzon Estate Pinot Rose de Cortex",
-    "description": "Vino Rosado",
-    "price": 24990,
+    "title": "Dv Catena Cabernet Malbec",
+    "description": "Vino Tinto",
+    "price": 14500,
     "pictures":[
-        "./img/vinos/rosados/garzon-pinot-rose-de-corte.webp"
+        "./img/vinos/tintos/dv catena cabernet malbec.webp"
+    ]
+},
+
+{
+    "id": 4,
+    "title": "Nicasia Red Bland Malbec",
+    "description": "Vino Tinto",
+    "price": 8750,
+    "pictures":[
+        "./img/vinos/tintos/nicasia-malbec.webp"
     ]
 
 },
 
 {
-    "id": 4,
-    "title": "Zuccardi Alma 4 Crudo Semillón",
-    "description": "Vino Espumoso",
-    "price": 24500,
+    "id": 5,
+    "title": "Saint Felicen Malbec",
+    "description": "Vino Tinto",
+    "price": 10800,
     "pictures":[
-        "./img/vinos/espumantes/alma-4-crudo1.webp"
+        "./img/vinos/tintos/saint-felicen-malbec.webp"
+    ]
+},
+
+{
+    "id": 6,
+    "title": "Dv Catena Chardonnay",
+    "description": "Vino Blancos",
+    "price": 16900,
+    "pictures":[
+        "./img/vinos/blancos/catena chardonnay.webp"
+    ]
+},
+
+{
+    "id": 7,
+    "title": "El Enemigo Chardonnay",
+    "description": "Vino Blancos",
+    "price": 20900,
+    "pictures":[
+        "./img/vinos/blancos/el-enemigo-chardonnay-.webp"
+    ]
+},
+
+{
+    "id": 8,
+    "title": "Saint Felicen Chardonnay",
+    "description": "Vino Blancos",
+    "price": 10800,
+    "pictures":[
+        "./img/vinos/blancos/saint-felicen-chardonnay.webp"
+    ]
+},
+
+{
+    "id": 9,
+    "title": "Gran Enemigo Torrontes x 750CC",
+    "description": "Vino Blancos",
+    "price": 59000,
+    "pictures":[
+        "./img/vinos/blancos/gran-enemigo-chardonnay-.webp"
+    ]
+},
+
+{
+    "id": 10,
+    "title": "Nicasia Blanc de Blancs",
+    "description": "Vino Blancos",
+    "price": 8750,
+    "pictures":[
+        "./img/vinos/blancos/nicasia_vineyards_blanc_de_bncs.webp"
+    ]
+},
+
+{
+    "id": 11,
+    "title": "Nicasia Blanc de Blancs",
+    "description": "Vino Blancos",
+    "price": 8750,
+    "pictures":[
+        "./img/vinos/blancos/nicasia_vineyards_blanc_de_bncs.webp"
+    ]
+},
+
+{
+    "id": 12,
+    "title": "Saint Felicien Semillón Doux",
+    "description": "Vino Blancos",
+    "price": 26500,
+    "pictures":[
+        "./img/vinos/blancos/sainfelicien_semillon_doux1.webp"
     ]
 }
+
+
+
 ]
