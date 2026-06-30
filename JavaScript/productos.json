@@ -1,0 +1,42 @@
+[
+{
+    "id": 1,
+    "title": "Álamos Malbec",
+    "description": "Vino Tinto",
+    "price": 7250,
+    "pictures": [
+        "./img/vinos/tintos/alamos_malbec.webp"
+    ]
+},
+
+{
+    "id": 2,
+    "title": "Dv Catena Chardonnay",
+    "description": "Vino Blanco",
+    "price": 16900,
+    "pictures":[
+        "./img/vinos/blancos/catena chardonnay chardonnay.webp"
+    ]
+},
+
+{
+    "id": 3,
+    "title": "Garzon Estate Pinot Rose de Cortex",
+    "description": "Vino Rosado",
+    "price": 24990,
+    "pictures":[
+        "./img/vinos/rosados/garzon-pinot-rose-de-corte.webp"
+    ]
+
+},
+
+{
+    "id": 4,
+    "title": "Zuccardi Alma 4 Crudo Semillón",
+    "description": "Vino Espumoso",
+    "price": 24500,
+    "pictures":[
+        "./img/vinos/espumantes/alma-4-crudo1.webp"
+    ]
+}
+]
