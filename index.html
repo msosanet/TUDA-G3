@@ -11,6 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/principal.css">
     <link rel="stylesheet" href="css/principal-sass.css">
+    <script src="js/index.js" defer></script>
     <title>Winebox | Vinos y bodegas de alta gama</title>
 </head>
 <body>
@@ -73,29 +74,9 @@
                 <h2 id="titulo-destacados" class="titulo-seccion">Destacados de la semana</h2>
             </div>
 
-            <div class="productos">
-                <article class="tarjeta">
-                    <figure>
-                        <img src="img/vinos/vinardo-rosato.png" alt="Botella de vino Vinardo Rosato">
-                        <figcaption>Reserva rosada del Valle de Uco, Mendoza.</figcaption>
-                    </figure>
-                    <h3>Reserva Especial “Vinardo Rosato”</h3>
-                    <p>Una etiqueta fresca y expresiva, ideal para acompañar entradas y tardes de verano.</p>
-                    <p class="precio"><strong>$73.000,00</strong></p>
-                    <a href="Contacto.html" class="link-detalle">Hablar con el sommelier</a>
-                </article>
-
-                <article class="tarjeta">
-                    <figure>
-                        <img src="img/vinos/michaelo-corleone.png" alt="Botella de vino Michaelo Corleone">
-                        <figcaption>Reserva italiana de carácter intenso.</figcaption>
-                    </figure>
-                    <h3>Reserva Especial “Michaelo Corleone”</h3>
-                    <p>Un vino elegante y persistente para cenas, celebraciones y regalos especiales.</p>
-                    <p class="precio"><strong>$89.999,99</strong></p>
-                    <a href="Contacto.html" class="link-detalle">Hablar con el sommelier</a>
-                </article>
-            </div>
+            <p id="mensaje-destacados" class="mensaje-datos" role="status">Cargando productos destacados...</p>
+            <p id="contador-destacados" class="contador-productos"></p>
+            <div class="productos" id="productos-destacados"></div>
         </section>
 
         <section class="comparativa" aria-labelledby="titulo-comparativa">
@@ -141,7 +122,7 @@
                 <p>Conocé nuevos ingresos, promociones y recomendaciones de temporada.</p>
             </div>
 
-            <form action="#newsletter" method="post">
+            <form action="#newsletter" method="post" id="newsletter-form">
                 <label for="nombre-newsletter">Nombre</label>
                 <input type="text" id="nombre-newsletter" name="nombre" placeholder="Tu nombre" required>
 
@@ -162,6 +143,7 @@
                 </label>
 
                 <button type="submit">Suscribirme</button>
+                <p id="newsletter-mensaje" class="mensaje-formulario" aria-live="polite"></p>
             </form>
         </section>
     </main>

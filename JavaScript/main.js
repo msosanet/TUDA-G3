@@ -15,7 +15,7 @@ const productos = [
         "description": "Vino Tinto",
         "price": 29500,
         "pictures":[
-            "./img/vinos/tintos/algelica-zapata-malbec.webp"
+            "./img/vinos/tintos/angelica_zapata_malbec.webp"
         ]
     },
 
@@ -46,27 +46,27 @@ const productos = [
         "description": "Vino Tinto",
         "price": 10800,
         "pictures":[
-            "./img/vinos/tintos/saint-felicen-malbec.webp"
+            "./img/vinos/tintos/saint-felicien-malbec.webp"
         ]
     },
 
     {
         "id": 6,
         "title": "Dv Catena Chardonnay",
-        "description": "Vino Blancos",
+        "description": "Vino Blanco",
         "price": 16900,
         "pictures":[
-            "./img/vinos/blancos/catena chardonnay.webp"
+            "./img/vinos/tintos/dv catena cabernet malbec.webp"
         ]
     },
 
     {
         "id": 7,
         "title": "El Enemigo Chardonnay",
-        "description": "Vino Blancos",
+        "description": "Vino Blanco",
         "price": 20900,
         "pictures":[
-            "./img/vinos/blancos/el-enemigo-chardonnay-.webp"
+            "./img/vinos/blancos/el-enemigo-chardonnay.webp"
         ]
     },
 
@@ -74,7 +74,7 @@ const productos = [
     {
         "id": 8,
         "title": "Gran Enemigo Torrontes x 750CC",
-        "description": "Vino Blancos",
+        "description": "Vino Blanco",
         "price": 59000,
         "pictures":[
             "./img/vinos/blancos/gran-enemigo-chardonnay-.webp"
@@ -84,7 +84,7 @@ const productos = [
     {
         "id": 9,
         "title": "Nicasia Blanc de Blancs",
-        "description": "Vino Blancos",
+        "description": "Vino Blanco",
         "price": 8750,
         "pictures":[
             "./img/vinos/blancos/nicasia_vineyards_blanc_de_bncs.webp"
@@ -94,7 +94,7 @@ const productos = [
     {
         "id": 10,
         "title": "Saint Felicien Semillón Doux",
-        "description": "Vino Blancos",
+        "description": "Vino Blanco",
         "price": 26500,
         "pictures":[
             "./img/vinos/blancos/sainfelicien_semillon_doux1.webp"
@@ -104,7 +104,7 @@ const productos = [
     {
         "id": 11,
         "title": "Garzon Estate Pinot Rose de Cortex 750cc",
-        "description": "Vino Rosados",
+        "description": "Vino Rosado",
         "price": 24990,
         "pictures":[
             "./img/vinos/rosados/garzon-pinot-rose-de-corte.webp"
@@ -114,17 +114,17 @@ const productos = [
     {
         "id":12,
         "title":"Riccitelli Kung Fu Pet Nat Rosado (Pinot Noir & Malbec) x 750CC",
-        "description":"Vino Rosados",
+        "description":"Vino Rosado",
         "price": 33950,
         "pictures":[
-            "./img/vinos/rosados/riccitelli-kun-fu-pet-nat.webp"
+            "./img/vinos/rosados/riccitelli-kung-fu-pet-nat.webp"
         ]
     },
 
     {
         "id":13,
         "title":"Estuche Clicquot Ice Jacket Rose x 750cc",
-        "description":"Vino Rosados",
+        "description":"Vino Rosado",
         "price": 199000,
         "pictures":[
             "./img/vinos/rosados/rose-ice-jacket.webp"
@@ -134,7 +134,7 @@ const productos = [
     {
         "id":14,
         "title":"Vino Serbal Malbec Rosé 750ml",
-        "description":"Vino Rosados",
+        "description":"Vino Rosado",
         "price": 13500,
         "pictures":[
             "./img/vinos/rosados/rosado (1).png"
@@ -144,7 +144,7 @@ const productos = [
     {
         "id":15,
         "title":"Vino Rose Malbec Vastago de GEA Bodega Staphyle",
-        "description":"Vino Rosados",
+        "description":"Vino Rosado",
         "price": 9000,
         "pictures":[
             "./img/vinos/rosados/rosado (2).png"
@@ -154,7 +154,7 @@ const productos = [
     {
         "id":16,
         "title":"Espumante Zuccardi Alma 4 Crudo Semillón x 750CC",
-        "description":"Vino Espumantes",
+        "description":"Vino Espumante",
         "price": 24500,
         "pictures":[
             "./img/vinos/espumantes/alma-4-crudo1.webp"
@@ -164,7 +164,7 @@ const productos = [
     {
         "id":17,
         "title":"Chandon Cuvee Brut Nature Rose x 750CC",
-        "description":"Vino Espumantes",
+        "description":"Vino Espumante",
         "price": 19900,
         "pictures":[
             "./img/vinos/espumantes/chandon-cuvee-brut-nature-rose.webp"
@@ -174,7 +174,7 @@ const productos = [
     {
         "id":18,
         "title":"Rutini Colección Espumante Brut Nature x 750CC",
-        "description":"Vino Espumantes",
+        "description":"Vino Espumante",
         "price": 48900,
         "pictures":[
             "./img/vinos/espumantes/rutini-brut1.webp"
@@ -184,7 +184,7 @@ const productos = [
     {
         "id":19,
         "title":"Trivento Cuvee Brut Nature x 750CC",
-        "description":"Vino Espumantes",
+        "description":"Vino Espumante",
         "price": 10990,
         "pictures":[
             "./img/vinos/espumantes/trivento-cuvee-brut-nature.webp"
@@ -194,7 +194,7 @@ const productos = [
     {
         "id":20,
         "title":"Chamas Honnorat Cuvee Speciale Brut Nature de Chañarmuyo",
-        "description":"Vino Espumantes",
+        "description":"Vino Espumante",
         "price": 25900,
         "pictures":[
             "./img/vinos/espumantes/espumante1.webp"
