@@ -70,18 +70,6 @@
     ]
 },
 
-<<<<<<< HEAD
-=======
-{
-    "id": 8,
-    "title": "Saint Felicen Chardonnay",
-    "description": "Vino Blancos",
-    "price": 10800,
-    "pictures":[
-        "./img/vinos/blancos/sainfelicien_semillon_doux1.webp"
-    ]
-},
->>>>>>> 06fe697dac7b33397558f245f4ad441e63290605
 
 {
     "id": 8,
@@ -213,10 +201,4 @@
     ]
 }
 
-<<<<<<< HEAD
 ]
-=======
-
-
-]
->>>>>>> 06fe697dac7b33397558f245f4ad441e63290605

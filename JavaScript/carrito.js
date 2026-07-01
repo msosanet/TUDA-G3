@@ -23,16 +23,22 @@ botones_carrito.forEach(boton => {
         .then(productos => {
             /**busco en el array que creamos en fetch atraves de una con dicion*/
             const producto = productos.find(p => p.id == id);
+           
             /**muestro el producto que cumple con la condicion*/
-            console.log(producto);
+                 /*console.log(producto);*/
+           
             /**cargo mi producto al array vacio "carrito" */
             carrito.push(producto);
             /**muestro el producto en el array carrito*/
             console.log("carrito: ",carrito);
+
+            rendercarrito();
             
-        })
-        
-            
-        
+        }) 
     });
 });
+function rendercarrito(){
+    const contenedor = document.querySelector(".container-carrito");
+    
+    contenedor.innerHTML = "";
+}
