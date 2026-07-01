@@ -15,7 +15,7 @@
     "description": "Vino Tinto",
     "price": 29500,
     "pictures":[
-        "./img/vinos/tintos/algelica-zapata-malbec.webp"
+        "./img/vinos/tintos/angelica_zapata_malbec.webp"
     ]
 },
 
@@ -46,7 +46,7 @@
     "description": "Vino Tinto",
     "price": 10800,
     "pictures":[
-        "./img/vinos/tintos/saint-felicen-malbec.webp"
+        "./img/vinos/tintos/saint-felicien-malbec.webp"
     ]
 },
 
@@ -56,7 +56,7 @@
     "description": "Vino Blancos",
     "price": 16900,
     "pictures":[
-        "./img/vinos/blancos/catena chardonnay.webp"
+        "./img/vinos/blancos/catena chardonnay chardonnay.webp"
     ]
 },
 
@@ -66,7 +66,7 @@
     "description": "Vino Blancos",
     "price": 20900,
     "pictures":[
-        "./img/vinos/blancos/el-enemigo-chardonnay-.webp"
+        "./img/vinos/blancos/el-enemigo-chardonnay.webp"
     ]
 },
 
@@ -76,7 +76,7 @@
     "description": "Vino Blancos",
     "price": 10800,
     "pictures":[
-        "./img/vinos/blancos/saint-felicen-chardonnay.webp"
+        "./img/vinos/blancos/sainfelicien_semillon_doux1.webp"
     ]
 },
 

@@ -1,0 +1,12 @@
+# Archivos locales del entorno
+.DS_Store
+Thumbs.db
+
+# Dependencias y salidas generadas si se agregan herramientas despues
+node_modules/
+dist/
+build/
+
+# Borradores locales
+*.local.json
+tmp/
