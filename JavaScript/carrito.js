@@ -1,5 +1,8 @@
 /*obtenemos todos los botones con la clase .btn-carrito*/
 const botones_carrito = document.querySelectorAll(".btn-carrito");
+/**creo un array carrito vacio, 
+ * para despues meterle los productos */
+let carrito = [];
 /**recorremos esos botones y "boton" representa cada boton(btn para mobile o pc)*/
 botones_carrito.forEach(boton => {
 
@@ -22,6 +25,10 @@ botones_carrito.forEach(boton => {
             const producto = productos.find(p => p.id == id);
             /**muestro el producto que cumple con la condicion*/
             console.log(producto);
+            /**cargo mi producto al array vacio "carrito" */
+            carrito.push(producto);
+            /**muestro el producto en el array carrito*/
+            console.log("carrito: ",carrito);
             
         })
         
