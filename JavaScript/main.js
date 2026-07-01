@@ -1,0 +1,228 @@
+const productos = [
+    {
+        "id": 1,
+        "title": "Álamos Malbec",
+        "description": "Vino Tinto",
+        "price": 7250,
+        "pictures": [
+            "./img/vinos/tintos/alamos_malbec.webp"
+        ]
+    },
+
+    {
+        "id": 2,
+        "title": "Angélica Zapata Malbec",
+        "description": "Vino Tinto",
+        "price": 29500,
+        "pictures":[
+            "./img/vinos/tintos/algelica-zapata-malbec.webp"
+        ]
+    },
+
+    {
+        "id": 3,
+        "title": "Dv Catena Cabernet Malbec",
+        "description": "Vino Tinto",
+        "price": 14500,
+        "pictures":[
+            "./img/vinos/tintos/dv catena cabernet malbec.webp"
+        ]
+    },
+
+    {
+        "id": 4,
+        "title": "Nicasia Red Bland Malbec",
+        "description": "Vino Tinto",
+        "price": 8750,
+        "pictures":[
+            "./img/vinos/tintos/nicasia-malbec.webp"
+        ]
+
+    },
+
+    {
+        "id": 5,
+        "title": "Saint Felicen Malbec",
+        "description": "Vino Tinto",
+        "price": 10800,
+        "pictures":[
+            "./img/vinos/tintos/saint-felicen-malbec.webp"
+        ]
+    },
+
+    {
+        "id": 6,
+        "title": "Dv Catena Chardonnay",
+        "description": "Vino Blancos",
+        "price": 16900,
+        "pictures":[
+            "./img/vinos/blancos/catena chardonnay.webp"
+        ]
+    },
+
+    {
+        "id": 7,
+        "title": "El Enemigo Chardonnay",
+        "description": "Vino Blancos",
+        "price": 20900,
+        "pictures":[
+            "./img/vinos/blancos/el-enemigo-chardonnay-.webp"
+        ]
+    },
+
+
+    {
+        "id": 8,
+        "title": "Gran Enemigo Torrontes x 750CC",
+        "description": "Vino Blancos",
+        "price": 59000,
+        "pictures":[
+            "./img/vinos/blancos/gran-enemigo-chardonnay-.webp"
+        ]
+    },
+
+    {
+        "id": 9,
+        "title": "Nicasia Blanc de Blancs",
+        "description": "Vino Blancos",
+        "price": 8750,
+        "pictures":[
+            "./img/vinos/blancos/nicasia_vineyards_blanc_de_bncs.webp"
+        ]
+    },
+
+    {
+        "id": 10,
+        "title": "Saint Felicien Semillón Doux",
+        "description": "Vino Blancos",
+        "price": 26500,
+        "pictures":[
+            "./img/vinos/blancos/sainfelicien_semillon_doux1.webp"
+        ]
+    },
+
+    {
+        "id": 11,
+        "title": "Garzon Estate Pinot Rose de Cortex 750cc",
+        "description": "Vino Rosados",
+        "price": 24990,
+        "pictures":[
+            "./img/vinos/rosados/garzon-pinot-rose-de-corte.webp"
+        ]
+    },
+
+    {
+        "id":12,
+        "title":"Riccitelli Kung Fu Pet Nat Rosado (Pinot Noir & Malbec) x 750CC",
+        "description":"Vino Rosados",
+        "price": 33950,
+        "pictures":[
+            "./img/vinos/rosados/riccitelli-kun-fu-pet-nat.webp"
+        ]
+    },
+
+    {
+        "id":13,
+        "title":"Estuche Clicquot Ice Jacket Rose x 750cc",
+        "description":"Vino Rosados",
+        "price": 199000,
+        "pictures":[
+            "./img/vinos/rosados/rose-ice-jacket.webp"
+        ]
+    },
+
+    {
+        "id":14,
+        "title":"Vino Serbal Malbec Rosé 750ml",
+        "description":"Vino Rosados",
+        "price": 13500,
+        "pictures":[
+            "./img/vinos/rosados/rosado (1).png"
+        ]
+    },
+
+    {
+        "id":15,
+        "title":"Vino Rose Malbec Vastago de GEA Bodega Staphyle",
+        "description":"Vino Rosados",
+        "price": 9000,
+        "pictures":[
+            "./img/vinos/rosados/rosado (2).png"
+        ]
+    },
+
+    {
+        "id":16,
+        "title":"Espumante Zuccardi Alma 4 Crudo Semillón x 750CC",
+        "description":"Vino Espumantes",
+        "price": 24500,
+        "pictures":[
+            "./img/vinos/espumantes/alma-4-crudo1.webp"
+        ]
+    },
+
+    {
+        "id":17,
+        "title":"Chandon Cuvee Brut Nature Rose x 750CC",
+        "description":"Vino Espumantes",
+        "price": 19900,
+        "pictures":[
+            "./img/vinos/espumantes/chandon-cuvee-brut-nature-rose.webp"
+        ]
+    },
+
+    {
+        "id":18,
+        "title":"Rutini Colección Espumante Brut Nature x 750CC",
+        "description":"Vino Espumantes",
+        "price": 48900,
+        "pictures":[
+            "./img/vinos/espumantes/rutini-brut1.webp"
+        ]
+    },
+
+    {
+        "id":19,
+        "title":"Trivento Cuvee Brut Nature x 750CC",
+        "description":"Vino Espumantes",
+        "price": 10990,
+        "pictures":[
+            "./img/vinos/espumantes/trivento-cuvee-brut-nature.webp"
+        ]
+    },
+
+    {
+        "id":20,
+        "title":"Chamas Honnorat Cuvee Speciale Brut Nature de Chañarmuyo",
+        "description":"Vino Espumantes",
+        "price": 25900,
+        "pictures":[
+            "./img/vinos/espumantes/espumante1.webp"
+        ]
+    }
+
+];
+
+const contenedorProductos = document.querySelector("#contenedor-productos");
+
+function cargarProductos() {
+    productos.forEach(producto => {
+        const columna = document.createElement("div");
+        columna.className = "col-12 col-md-3";
+        const tarjeta = document.createElement("div");
+        tarjeta.className = "tarjeta";
+        tarjeta.innerHTML = `
+            <img src="${producto.pictures[0]}" alt="${producto.title}" >
+            <h3>${producto.title}</h3>
+            <p>${producto.description}</p>
+            <p class="precio">$${producto.price}</p>
+            <a href="./detalles.html" class="link-detalle">Ver detalle</a>
+        `;
+
+        columna.appendChild(tarjeta);
+        contenedorProductos.appendChild(columna);
+
+    })
+}
+
+cargarProductos();
