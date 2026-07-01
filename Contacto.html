@@ -21,16 +21,22 @@
         </div>
     </nav> 
     <main class="flex-1">
-<div class="w-full min-h-[20rem] sm:min-h-[24rem] md:min-h-[28rem] lg:min-h-[32rem] xl:min-h-[36rem] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center text-center text-white px-5 sm:px-8 md:px-10 xl:px-16" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/vinos/portada categoria.png');">
-    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3">CONTACTO</h1>
-    <p class="max-w-2xl text-base sm:text-lg md:text-xl">Los mejores vinos seleccionados para ti</p>
+<div class="relative w-full h-72 md:h-96">
+    <img src="img/vinos/portada categoria.png"
+         class="w-full h-full object-cover"
+         alt="Portada">
+
+    <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white">
+        <h1 class="text-3xl md:text-5xl font-bold">CONTACTO</h1>
+        <p class="mt-2">Los mejores vinos seleccionados para ti</p>
+    </div>
 </div>
 
         <section id="contacto" class="px-5 py-8 sm:px-8 md:px-12 lg:px-16">
             <div class="mx-auto flex w-full max-w-6xl flex-col gap-6 sm:gap-8 md:gap-10 md:flex-row">
 
                 <div class="flex-1 bg-white rounded-xl shadow-lg p-5 sm:p-6 md:p-8">
-                    <form method="POST" action="#">
+                    <form id="contacto-form" method="POST" action="#">
                         <h2 class="text-xl sm:text-2xl font-bold mb-5 sm:mb-6 text-gray-800">Encuesta</h2>
                         <div class="mb-5">
                             <label for="nombre" class="block text-xs sm:text-sm font-semibold text-gray-900 mb-2">Nombre:</label>
@@ -70,7 +76,7 @@
                     </form>
                 </div>
                 <div class="flex-1 bg-white rounded-xl shadow-lg p-5 sm:p-6 md:p-8">
-                    <form class="space-y-4" method="POST" action="#">
+                    <div class="space-y-4">
                         <h2 class="text-xl sm:text-2xl font-bold mb-5 sm:mb-6 text-gray-800">Ayuda</h2>
 
                         <div class="mb-5">
@@ -102,7 +108,25 @@
                             </details>
                         </div>
 
-                        <a href="https://youtu.be/IQ9kDtbwoaw?si=cOM6NmMVFyo5Ky45" class="inline-flex w-full items-center justify-center rounded-lg bg-[#722F37] py-3 sm:py-4 px-5 sm:px-6 text-sm sm:text-lg font-semibold text-white transition-colors hover:bg-yellow-600">Suscribirme</a>
+                        <h3 class="text-base sm:text-lg font-semibold text-gray-900 mt-6">
+                        🍷 Recibí nuestras novedades
+                        </h3>
+                        <form id="newsletter-form" class="space-y-3">
+                            <input
+                                type="email"
+                                id="newsletter-email"
+                                placeholder="tu@email.com"
+                                class="w-full border-2 border-yellow-600 rounded-lg p-3"
+                                required
+                            >
+                            <button
+                                type="submit"
+                                class="w-full rounded-lg bg-[#722F37] py-3 text-white hover:bg-yellow-600">
+                                Suscribirme
+                            </button>
+
+                            <p id="newsletter-mensaje" class="text-sm font-semibold"></p>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -110,5 +134,7 @@
         </main><footer class="bg-[#2C2C2C] text-gray-100 text-center py-8 sm:py-10 md:py-12 mt-8 sm:mt-10 md:mt-12 px-5">
         <p class="text-xs sm:text-sm">&copy; 2026 Winebox. Todos los derechos reservados.</p>
     </footer>
+    <script src="./JavaScript/contacto.js"></script>
+    <script src="./JavaScript/newsletter.js"></script>
 </body>
 </html>
