@@ -10,13 +10,22 @@ botones_carrito.forEach(boton => {
          * del atributo data-id del botón presionado
          */
         console.log(boton.dataset.id);
+        /**guardo en una constante "id" el valor del id del boton */
+        const id = boton.dataset.id;
 
         /**usamos fetch para traer los productos.json 
          * al carrito y representarlos como "productos" */
         fetch("./JavaScript/productos.json")
-        .then(Response => Response.json)
+        .then(response => response.json())
         .then(productos => {
-            console.log("productos")
+            /**busco en el array que creamos en fetch atraves de una con dicion*/
+            const producto = productos.find(p => p.id == id);
+            /**muestro el producto que cumple con la condicion*/
+            console.log(producto);
+            
         })
+        
+            
+        
     });
 });

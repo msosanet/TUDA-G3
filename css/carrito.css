@@ -1,13 +1,37 @@
-
-.producto-01{
-
+:root {
+  --color-fondo: #FFFFFF;
+  --color-primario: #722F37;
+  --color-acento: #D4AF37;
+  --color-texto: #2C2C2C;
+  --color-suave: #F9F9F9;
 }
-.producto-02{
-
+html,
+body {
+    height: 100%;
+    margin: 0;
 }
-.producto-03{
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-.producto-04{
-    
+
+main {
+    flex: 1;
+}
+.carrito-vacio{
+    color: var(--color-texto);
+    display: none;
+}
+.carrito-productos{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.carrito-producto{
+    display: flex;
+}
+.carrito-productos-img{
+    width: 5rem;
 }

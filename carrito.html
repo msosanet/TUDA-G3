@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CARRITO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./scss-2/styleG.css">
     <link rel="stylesheet" href="./css/carrito.css">
 </head>
@@ -18,42 +19,63 @@
             </div>
         </nav>
         <!--todo el main se pasará a javaScript-->
-    <main class="productos-agregar-carrito">
-      <article class="sin-productos"> 
-        <h3>Carrito sin productos...</h3>
-        
-      </article>
+<main>
+    <h2 class="titulo-carrito">Mi Carrito</h2>
 
-      <article class="producto-01">
-        <img src="./img/vinos/tintos/alamos_malbec.webp" alt="imagen de vino tinto">
-        <h2>Vino Tinto Alamos Malbec </h2>
-      </article>
+    <div class="container-carrito">
 
-      <article class="producto-02">
-        <img src="./img/vinos/blancos/catena chardonnay chardonnay.webp" alt="imagen de vino blanco">
-        <h2>Vino Blanco Dv Catena Chardonnay </h2>
+        <p class="carrito-vacio">Tu carrito está vacío.</p>
 
-      </article>
+        <div class="carrito-productos">
 
-      <article class="producto-03">
-        <img src="./img/vinos/rosados/garzon-pinot-rose-de-corte.webp" alt="imagen de vino rosado">
-        <h2>Vino Rosado Garzon Estate Pinot Rose de Cortex</h2>
-        
-      </article>
+            <article class="carrito-producto">
 
-      <article class="producto-04">
-        <img src="./img/vinos/espumantes/alma-4-crudo1.webp" alt="imagen de vino espumante">
-        <h2>Vino Espumante Zuccardi Alma 4 Crudo Semillón</h2>
-        
-      </article>
+                <img class="carrito-productos-img" src="./img/vinos/tintos/alamos_malbec.webp"
+                     alt="Imagen de vino tinto">
 
+                <div class="carrito-producto-titulo">
+                    <small>Título</small>
+                    <h2>Vino Tinto Alamos Malbec</h2>
+                </div>
 
+                <div class="carrito-producto-cantidad">
+                    <small>Cantidad</small>
+                    <p>1</p>
+                </div>
 
+                <div class="carrito-producto-precio">
+                    <small>Precio</small>
+                    <p>$1000</p>
+                </div>
 
+                <div class="carrito-producto-subtotal">
+                    <small>Subtotal</small>
+                    <p>$1000</p>
+                </div>
 
+                <button class="carrito-producto-eliminar">
+                    <i class="bi bi-trash-fill"></i>
+                </button>
 
+            </article>
 
-    </main>
+        </div>
+
+    </div>
+
+    <div class="carrito-acciones-izquierda">
+        <button>vaciar</button>
+    </div>
+
+    <div class="carrito-acciones-derecha">
+        <div class="carrito-acciones-total">
+            <p>Total</p>
+            <P id="total">$1000</P>
+        </div>
+    </div>
+    <button>Comprar todo</button>
+
+</main>
 
       <footer>
            <P>&copy; 2026 Winebox - Todos los derechos reservados.</P>
